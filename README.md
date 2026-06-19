@@ -73,17 +73,6 @@ Este projeto não substitui revisão humana.
 
 Antes de usar ou publicar qualquer imagem, revise se todos os dados sensíveis foram removidos.
 
-Não devem ser publicados no GitHub:
-
-- nome do tutor;
-- nome do paciente;
-- nome da clínica;
-- telefone;
-- endereço;
-- número de prontuário;
-- dados clínicos identificáveis;
-- imagens reais sem anonimização adequada.
-
 ---
 
 ## Status
