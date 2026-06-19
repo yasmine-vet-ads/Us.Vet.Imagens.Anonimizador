@@ -74,6 +74,23 @@ A primeira versão do MVP permite:
 * Matplotlib
 
 ---
+## Como usar no Google Colab
+
+1. Abra o notebook do projeto no Google Colab.
+2. Execute a célula de importação das bibliotecas.
+3. Envie uma imagem ultrassonográfica de teste.
+4. Execute a célula de carregamento da imagem.
+5. Aplique a função de anonimização do canto inferior direito:
+
+```python
+imagem_anonimizada = anonimizar_canto_inferior_direito(
+    imagem_original,
+    modo="tarja",
+    largura_percent=55,
+    altura_percent=3
+)
+
+mostrar_antes_depois(imagem_original, imagem_anonimizada)
 
 ## Exemplo de aplicação
 
