@@ -1,132 +1,127 @@
 # Us.Vet.Imagens.Anonimizador
 
-**MVP open source para anonimização de imagens ultrassonográficas veterinárias.**
+MVP open source para anonimização de imagens ultrassonográficas veterinárias.
 
 O **Us.Vet.Imagens.Anonimizador** é um projeto desenvolvido para auxiliar na remoção de dados sensíveis presentes em imagens ultrassonográficas veterinárias, como nome do paciente, tutor, ID do exame, data, clínica ou outras informações exibidas na tela do aparelho.
 
-A proposta surgiu a partir da rotina em diagnóstico por imagem veterinário, especialmente na ultrassonografia de cães e gatos, onde imagens clínicas podem conter informações identificáveis. O projeto busca criar uma solução simples, acessível e aplicável para preparar imagens com mais segurança antes de uso em estudo, documentação técnica, banco de imagens, portfólio acadêmico ou projetos futuros de análise de dados e inteligência artificial.
+A proposta surgiu a partir da rotina em diagnóstico por imagem veterinário, especialmente na ultrassonografia de cães, gatos e pequenos mamíferos, onde imagens podem conter informações identificáveis que precisam ser protegidas antes de uso em estudos, aulas, apresentações, publicações, portfólio ou desenvolvimento de projetos com dados clínicos.
 
 ---
 
-## Objetivo do projeto
+## Objetivo
 
-Criar um MVP capaz de anonimizar imagens ultrassonográficas veterinárias por meio de processamento de imagem, preservando a região diagnóstica e removendo áreas com dados sensíveis.
+Criar uma ferramenta simples para apoiar a anonimização de imagens ultrassonográficas veterinárias, permitindo que o usuário selecione áreas sensíveis da imagem e gere uma versão protegida para uso educacional, acadêmico ou técnico.
 
-Nesta primeira versão, o sistema permite aplicar uma tarja automática em regiões específicas da imagem, com foco inicial no canto inferior direito, onde determinados aparelhos exibem nome do paciente, tutor e ID do exame.
+O projeto tem foco em:
+
+- privacidade de dados;
+- diagnóstico por imagem veterinária;
+- anonimização de imagens;
+- documentação técnica;
+- uso educacional e acadêmico;
+- automação de processos;
+- desenvolvimento de soluções VetTech.
 
 ---
 
 ## Problema
 
-Na rotina de ultrassonografia veterinária, as imagens dos exames muitas vezes contêm dados sensíveis incorporados diretamente na imagem.
+Imagens ultrassonográficas frequentemente exibem informações sensíveis na tela, como:
 
-Isso dificulta o uso seguro dessas imagens para:
+- nome do paciente;
+- nome do tutor;
+- data do exame;
+- identificação do aparelho;
+- clínica ou hospital;
+- número do exame;
+- dados administrativos;
+- outras informações pessoais ou institucionais.
 
-- estudo;
-- ensino;
-- organização de casuística;
-- trabalhos acadêmicos;
-- construção de banco de imagens;
-- portfólio técnico;
-- pesquisa;
-- aplicações futuras de visão computacional.
+Quando essas imagens são usadas em materiais acadêmicos, aulas, publicações, apresentações, portfólio ou bases de teste, é necessário remover ou ocultar esses dados para preservar a privacidade.
 
-Além disso, a anonimização manual pode ser demorada, repetitiva e sujeita a falhas.
+A anonimização manual pode ser demorada, pouco padronizada e sujeita a falhas.
 
 ---
 
 ## Solução proposta
 
-O projeto utiliza Python e bibliotecas de processamento de imagem para aplicar anonimização automática em áreas configuráveis da imagem.
+O projeto propõe um MVP para facilitar esse processo, permitindo carregar uma imagem ultrassonográfica, selecionar áreas que devem ser ocultadas e gerar uma nova imagem anonimizada.
 
-A primeira versão do MVP permite:
-
-- carregar uma imagem ultrassonográfica;
-- definir regiões sensíveis;
-- aplicar tarja preta, desfoque ou pixelização;
-- preservar a maior parte da imagem diagnóstica;
-- visualizar o resultado antes e depois;
-- baixar a imagem anonimizada.
+A ferramenta foi pensada para ser simples, prática e alinhada a problemas reais da rotina veterinária.
 
 ---
 
-## Funcionalidades do MVP
+## Público-alvo
 
-- Upload de imagem no Google Colab.
-- Leitura da imagem com Python.
-- Conversão da imagem para processamento.
-- Anonimização por região.
-- Máscara seletiva no canto inferior direito.
-- Ajuste da largura e altura da faixa de anonimização.
-- Visualização comparativa antes/depois.
-- Download da imagem anonimizada.
-- Estrutura inicial para evolução futura em lote e interface web.
+- Médicos-veterinários;
+- ultrassonografistas veterinários;
+- estudantes de Medicina Veterinária;
+- pesquisadores;
+- professores;
+- clínicas e hospitais veterinários;
+- projetos de diagnóstico por imagem;
+- iniciativas de HealthTech e VetTech.
+
+---
+
+## Status do projeto
+
+🚧 MVP em desenvolvimento.
+
+O projeto já possui uma estrutura inicial com aplicação, documentação e exemplo de imagem anonimizada.
+
+---
+
+## Funcionalidades previstas
+
+- Upload de imagem ultrassonográfica;
+- visualização da imagem original;
+- seleção de áreas sensíveis;
+- aplicação de tarja ou ocultação visual;
+- geração de imagem anonimizada;
+- download da imagem processada;
+- documentação das regras de anonimização;
+- evolução para fluxos mais automatizados.
+
+---
+
+## Funcionalidades futuras
+
+- Detecção semiautomática de áreas com texto;
+- suporte a múltiplas imagens;
+- padronização de exportação;
+- melhoria da interface;
+- processamento em lote;
+- comparação antes/depois;
+- integração com fluxos de organização documental;
+- uso conjunto com sistemas de consulta e documentação técnica.
 
 ---
 
 ## Tecnologias utilizadas
 
-- Python
-- Google Colab
-- OpenCV
-- Pillow
-- NumPy
-- Matplotlib
+- Python;
+- Streamlit;
+- OpenCV;
+- Jupyter Notebook;
+- Git e GitHub.
 
 ---
 
-## Como usar no Google Colab
-
-1. Abra o notebook do projeto no Google Colab.
-2. Execute a célula de importação das bibliotecas.
-3. Envie uma imagem ultrassonográfica de teste.
-4. Execute a célula de carregamento da imagem.
-5. Aplique a função de anonimização do canto inferior direito:
-
-```python
-imagem_anonimizada = anonimizar_canto_inferior_direito(
-    imagem_original,
-    modo="tarja",
-    largura_percent=55,
-    altura_percent=3
-)
-
-mostrar_antes_depois(imagem_original, imagem_anonimizada)
-```
-
-6. Revise visualmente o resultado.
-7. Baixe a imagem anonimizada.
-
-A configuração inicial recomendada é `largura_percent=55` e `altura_percent=3`, pois ela cobre apenas a linha inferior direita onde aparecem dados sensíveis, preservando medidas e informações técnicas relevantes do exame.
-
----
-
-## Exemplo de aplicação
-
-O MVP foi testado em imagem ultrassonográfica veterinária contendo dados sensíveis no rodapé direito da tela.
-
-A primeira abordagem com tarja ampla cobria também dados técnicos relevantes, como medidas do exame. Após ajuste, a solução passou a aplicar uma máscara mais fina e localizada, removendo nome, tutor e ID, sem prejudicar a região diagnóstica principal.
-
-<p align="center">
-  <img src="imagem_anonimizada.png" alt="Exemplo de imagem ultrassonográfica veterinária anonimizada com tarja no rodapé direito" width="800">
-</p>
-
-<p align="center">
-  <em>Exemplo de imagem ultrassonográfica veterinária após anonimização seletiva no rodapé direito.</em>
-</p>
-
-Esse processo reforça a importância de uma anonimização configurável, validada visualmente e adaptável ao padrão de cada equipamento.
-
----
-
-## Estrutura atual do projeto
+## Estrutura do repositório
 
 ```text
 Us.Vet.Imagens.Anonimizador/
+│
 ├── app/
 │   └── anonimizador.py
+│
+├── docs/
+│   └── regras_anonimizacao.md
+│
 ├── notebooks/
-│   └── UsVet_Anonimizador_MVP.ipynb
+│
+├── .gitignore
 ├── LICENSE
 ├── README.md
 ├── imagem_anonimizada.png
@@ -135,74 +130,153 @@ Us.Vet.Imagens.Anonimizador/
 
 ---
 
-## Próximas evoluções
+## Como executar o projeto
 
-- Processamento em lote de múltiplas imagens.
-- Perfis de anonimização por modelo de aparelho.
-- Seleção manual de áreas sensíveis.
-- Interface web com Streamlit.
-- Exportação automática em `.zip`.
-- Remoção de metadados.
-- Registro de histórico de processamento.
-- Organização de banco de imagens anonimizado.
-- Classificação futura por espécie, órgão e achado ultrassonográfico.
-- Possível uso de OCR para detecção automática de textos sensíveis.
+### Requisitos
 
----
+- Python 3 instalado;
+- dependências listadas em `requirements.txt`.
 
-## Cuidados com privacidade
+### Instalação
 
-Este projeto não substitui revisão humana.
+Clone o repositório:
 
-Antes de publicar, compartilhar ou utilizar uma imagem em contexto acadêmico, profissional ou público, é necessário revisar visualmente se todos os dados sensíveis foram removidos.
+```bash
+git clone https://github.com/yasmine-vet-ads/Us.Vet.Imagens.Anonimizador.git
+```
 
-Não devem ser publicados no GitHub:
+Acesse a pasta do projeto:
 
-- nome do tutor;
-- nome do paciente;
-- nome da clínica;
-- telefone;
-- endereço;
-- número de prontuário;
-- ID real do exame;
-- imagens clínicas identificáveis;
-- dados pessoais ou profissionais visíveis.
+```bash
+cd Us.Vet.Imagens.Anonimizador
+```
 
-Para demonstração pública, recomenda-se utilizar apenas imagens fictícias, simuladas ou previamente anonimizadas.
+Instale as dependências:
+
+```bash
+pip install -r requirements.txt
+```
+
+Execute a aplicação:
+
+```bash
+streamlit run app/anonimizador.py
+```
 
 ---
 
-## Possíveis aplicações
+## Exemplo de uso
 
-- Organização de banco pessoal de imagens ultrassonográficas.
-- Apoio a estudos em diagnóstico por imagem veterinário.
-- Preparação de imagens para aulas e apresentações.
-- Projetos acadêmicos em Análise e Desenvolvimento de Sistemas.
-- Portfólio técnico em VetTech e HealthTech.
-- Base futura para estudos com visão computacional e IA aplicada.
+1. O usuário carrega uma imagem ultrassonográfica;
+2. identifica regiões com dados sensíveis;
+3. aplica a anonimização visual;
+4. confere a imagem final;
+5. exporta a versão anonimizada.
+
+Esse fluxo pode apoiar o preparo de imagens para:
+
+- aulas;
+- estudos de caso;
+- apresentações;
+- portfólio técnico;
+- publicações;
+- bases de teste;
+- documentação interna.
 
 ---
 
-## Status do projeto
+## Regras de anonimização
 
-MVP inicial funcional em Google Colab.
+A documentação das regras de anonimização está disponível em:
 
-A primeira versão realiza anonimização seletiva de regiões sensíveis em imagens ultrassonográficas veterinárias.
+- [`docs/regras_anonimizacao.md`](docs/regras_anonimizacao.md)
+
+Esse documento orienta quais informações devem ser removidas ou ocultadas antes do uso de imagens em contextos educacionais, acadêmicos ou técnicos.
+
+---
+
+## Projeto relacionado
+
+Este projeto se conecta ao repositório [Ia-Vet-Doc](https://github.com/yasmine-vet-ads/Ia-Vet-Doc), voltado à organização, consulta e estruturação de documentos veterinários.
+
+Enquanto o **Us.Vet.Imagens.Anonimizador** tem foco na remoção de dados sensíveis em imagens ultrassonográficas, o **Ia-Vet-Doc** explora o processamento de documentos, laudos e informações técnicas com apoio de IA aplicada e consulta contextual.
+
+Juntos, os dois projetos representam uma linha de desenvolvimento voltada à aplicação de tecnologia na rotina de diagnóstico por imagem veterinária, com atenção a:
+
+- privacidade de dados;
+- documentação técnica;
+- organização de informações clínicas;
+- automação;
+- apoio à tomada de decisão;
+- inovação aplicada à Medicina Veterinária.
+
+Essa conexão reforça a proposta de criar soluções digitais para problemas reais observados na rotina veterinária.
+
+---
+
+## Possível evolução integrada
+
+No futuro, os dois projetos podem compor um fluxo mais completo:
+
+1. anonimização de imagens ultrassonográficas;
+2. organização de laudos e documentos técnicos;
+3. consulta contextual a informações clínicas;
+4. estruturação de achados;
+5. apoio à documentação veterinária;
+6. preparação de dados para ensino, pesquisa e portfólio.
+
+Essa linha de evolução conecta imagem, texto, privacidade, automação e organização de dados clínicos.
+
+---
+
+## Cuidados éticos
+
+Este projeto tem finalidade educacional, técnica e experimental.
+
+A ferramenta não substitui revisão humana. Toda imagem anonimizada deve ser conferida antes de uso externo.
+
+Antes de utilizar imagens reais, é necessário remover ou ocultar qualquer informação que permita identificar:
+
+- paciente;
+- tutor;
+- clínica;
+- profissional;
+- data ou número de exame;
+- dados administrativos sensíveis.
+
+O uso de imagens deve respeitar princípios de privacidade, consentimento, ética profissional e legislação aplicável.
+
+---
+
+## Roadmap
+
+- [x] Criar repositório inicial;
+- [x] estruturar aplicação;
+- [x] criar documentação inicial;
+- [x] adicionar exemplo de imagem anonimizada;
+- [x] organizar dependências;
+- [ ] melhorar interface;
+- [ ] documentar passo a passo com prints;
+- [ ] adicionar exemplos de antes/depois;
+- [ ] implementar processamento de múltiplas imagens;
+- [ ] estudar detecção semiautomática de texto;
+- [ ] integrar com fluxo de organização de documentos.
+
+---
+
+## Diferencial do projeto
+
+Este projeto nasceu de uma necessidade real da rotina em diagnóstico por imagem veterinária.
+
+Além de demonstrar conhecimentos em Python, Streamlit e processamento de imagens, o projeto mostra aplicação prática de tecnologia em um problema concreto: proteger dados sensíveis em imagens ultrassonográficas antes de uso educacional, acadêmico ou técnico.
+
+A proposta conecta Medicina Veterinária, diagnóstico por imagem, privacidade de dados, automação e desenvolvimento de soluções digitais aplicadas.
 
 ---
 
 ## Autora
 
-**Yasmine Santos**  
-Estudante de Análise e Desenvolvimento de Sistemas pelo IFRS  
+Yasmine Santos  
+Estudante de Análise e Desenvolvimento de Sistemas — IFRS  
 Médica-veterinária especialista em Diagnóstico por Imagem  
-Interesses: VetTech, HealthTech, processamento de imagens, dados, automação, IA aplicada e desenvolvimento de soluções digitais para problemas reais.
-
-LinkedIn: https://www.linkedin.com/in/yasmine-santos-594a7a140  
-GitHub: https://github.com/yasmine-vet-ads
-
----
-
-## Licença
-
-Este projeto está licenciado sob a licença MIT.
+GitHub: [yasmine-vet-ads](https://github.com/yasmine-vet-ads)
