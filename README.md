@@ -1,126 +1,135 @@
-# Us.Vet.Imagens.Anonimizador
+# Us.Vet Image Anonymizer
 
-MVP open source para anonimização de imagens ultrassonográficas veterinárias.
+An open-source MVP for anonymizing veterinary ultrasound images.
 
-O **Us.Vet.Imagens.Anonimizador** é um projeto desenvolvido para auxiliar na remoção de dados sensíveis presentes em imagens ultrassonográficas veterinárias, como nome do paciente, tutor, ID do exame, data, clínica ou outras informações exibidas na tela do aparelho.
+**Us.Vet Image Anonymizer** helps remove sensitive information from veterinary ultrasound images, such as the patient or owner's name, examination ID, date, clinic name, and other information displayed by ultrasound equipment.
 
-A proposta surgiu a partir da rotina em diagnóstico por imagem veterinário, especialmente na ultrassonografia de cães, gatos e pequenos mamíferos, onde imagens podem conter informações identificáveis que precisam ser protegidas antes de uso em estudos, aulas, apresentações, publicações, portfólio ou desenvolvimento de projetos com dados clínicos.
-
----
-
-## Objetivo
-
-Criar uma ferramenta simples para apoiar a anonimização de imagens ultrassonográficas veterinárias, permitindo que o usuário selecione áreas sensíveis da imagem e gere uma versão protegida para uso educacional, acadêmico ou técnico.
-
-O projeto tem foco em:
-
-- privacidade de dados;
-- diagnóstico por imagem veterinária;
-- anonimização de imagens;
-- documentação técnica;
-- uso educacional e acadêmico;
-- automação de processos;
-- desenvolvimento de soluções VetTech.
+The project was inspired by routine veterinary diagnostic imaging workflows. Images of dogs, cats, and small mammals may contain identifiable information that must be protected before they are used in studies, classes, presentations, publications, portfolios, or clinical datasets.
 
 ---
 
-## Problema
+## Objective
 
-Imagens ultrassonográficas frequentemente exibem informações sensíveis na tela, como:
+Provide a simple tool for protecting sensitive regions in veterinary ultrasound images and generating clean copies for educational, academic, and technical use.
 
-- nome do paciente;
-- nome do tutor;
-- data do exame;
-- identificação do aparelho;
-- clínica ou hospital;
-- número do exame;
-- dados administrativos;
-- outras informações pessoais ou institucionais.
+The project focuses on:
 
-Quando essas imagens são usadas em materiais acadêmicos, aulas, publicações, apresentações, portfólio ou bases de teste, é necessário remover ou ocultar esses dados para preservar a privacidade.
-
-A anonimização manual pode ser demorada, pouco padronizada e sujeita a falhas.
+- data privacy;
+- veterinary diagnostic imaging;
+- image anonymization;
+- technical documentation;
+- educational and academic use;
+- workflow automation;
+- VetTech solutions.
 
 ---
 
-## Solução proposta
+## Problem
 
-O projeto propõe um MVP para facilitar esse processo, permitindo carregar uma imagem ultrassonográfica, selecionar áreas que devem ser ocultadas e gerar uma nova imagem anonimizada.
+Ultrasound images frequently display sensitive information, including:
 
-A ferramenta foi pensada para ser simples, prática e alinhada a problemas reais da rotina veterinária.
+- patient name;
+- owner name;
+- examination date;
+- equipment identification;
+- clinic or hospital name;
+- examination or medical-record number;
+- administrative data;
+- other personal or institutional information.
 
----
+When these images are used in educational materials, classes, publications, presentations, portfolios, or test datasets, identifiable information must be removed or hidden to preserve privacy.
 
-## Público-alvo
-
-- Médicos-veterinários;
-- ultrassonografistas veterinários;
-- estudantes de Medicina Veterinária;
-- pesquisadores;
-- professores;
-- clínicas e hospitais veterinários;
-- projetos de diagnóstico por imagem;
-- iniciativas de HealthTech e VetTech.
+Manual anonymization can be slow, inconsistent, and prone to errors.
 
 ---
 
-## Status do projeto
+## Solution
 
-🚧 MVP em desenvolvimento.
+The application provides a simple interface for uploading up to 10 ultrasound images at a time, configuring sensitive border regions, reviewing the result, and downloading the anonymized images.
 
-O projeto já possui uma estrutura inicial com aplicação, documentação e exemplo de imagem anonimizada.
+By default, a black bar covers 4% of the image height at both the header and footer. These percentages can be adjusted for images produced by equipment with a different layout. The application also supports blur and pixelation modes, as well as optional masks on the left and right edges.
 
----
-
-## Funcionalidades previstas
-
-- Upload de imagem ultrassonográfica;
-- visualização da imagem original;
-- seleção de áreas sensíveis;
-- aplicação de tarja ou ocultação visual;
-- geração de imagem anonimizada;
-- download da imagem processada;
-- documentação das regras de anonimização;
-- evolução para fluxos mais automatizados.
+All processed images are exported as RGB PNG files without retaining the original EXIF metadata.
 
 ---
 
-## Funcionalidades futuras
+## Target Audience
 
-- Detecção semiautomática de áreas com texto;
-- suporte a múltiplas imagens;
-- padronização de exportação;
-- melhoria da interface;
-- processamento em lote;
-- comparação antes/depois;
-- integração com fluxos de organização documental;
-- uso conjunto com sistemas de consulta e documentação técnica.
+- Veterinarians;
+- veterinary ultrasonographers;
+- veterinary medicine students;
+- researchers;
+- lecturers and educators;
+- veterinary clinics and hospitals;
+- diagnostic imaging projects;
+- HealthTech and VetTech initiatives.
 
 ---
 
-## Tecnologias utilizadas
+## Project Status
+
+🚧 MVP under active development.
+
+The project currently includes a functional Streamlit application, batch processing for up to 10 images, configurable anonymization masks, individual download, ZIP download, automated tests, documentation, and an anonymized sample image.
+
+---
+
+## Current Features
+
+- Upload up to 10 ultrasound images per batch;
+- support for PNG, JPG, and JPEG files;
+- configurable black-bar, blur, and pixelation modes;
+- configurable masks for the top, bottom, left, and right edges;
+- default 4% header and footer masks;
+- side-by-side preview of the first original and anonymized image;
+- individual download of the first anonymized image;
+- download of every processed image in a single ZIP archive;
+- sequential and identifiable output filenames;
+- RGB PNG export without preserving the original EXIF metadata;
+- local processing without an external database;
+- automated tests for masks and metadata-free export.
+
+---
+
+## Planned Features
+
+- Manual selection of sensitive regions;
+- device-specific mask profiles;
+- semi-automatic text detection using OCR;
+- processing history;
+- anonymized image database;
+- classification by organ, species, and ultrasound finding;
+- additional before-and-after examples;
+- improved interface and user guidance.
+
+---
+
+## Technologies
 
 - Python;
 - Streamlit;
+- Pillow;
+- NumPy;
 - OpenCV;
 - Jupyter Notebook;
-- Git e GitHub.
+- Git and GitHub.
 
 ---
 
-## Estrutura do repositório
+## Project Structure
 
 ```text
 Us.Vet.Imagens.Anonimizador/
-│
 ├── app/
-│   └── anonimizador.py
-│
+│   ├── anonimizador.py
+│   └── main.py
 ├── docs/
-│   └── regras_anonimizacao.md
-│
+│   ├── regras_anonimizacao.md
+│   └── requisitos.md
 ├── notebooks/
-│
+│   └── UsVet_Anonimizador_MVP.ipynb
+├── tests/
+│   └── test_anonimizador.py
 ├── .gitignore
 ├── LICENSE
 ├── README.md
@@ -130,153 +139,240 @@ Us.Vet.Imagens.Anonimizador/
 
 ---
 
-## Como executar o projeto
+## Installation
 
-### Requisitos
+### Requirements
 
-- Python 3 instalado;
-- dependências listadas em `requirements.txt`.
+- Python 3.9 or newer;
+- `pip`;
+- dependencies listed in `requirements.txt`.
 
-### Instalação
-
-Clone o repositório:
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/yasmine-vet-ads/Us.Vet.Imagens.Anonimizador.git
 ```
 
-Acesse a pasta do projeto:
+### 2. Open the project directory
 
 ```bash
 cd Us.Vet.Imagens.Anonimizador
 ```
 
-Instale as dependências:
+### 3. Create a virtual environment (recommended)
+
+On Linux or macOS:
 
 ```bash
-pip install -r requirements.txt
+python3 -m venv .venv
+source .venv/bin/activate
 ```
 
-Execute a aplicação:
+On Windows PowerShell:
+
+```powershell
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+```
+
+### 4. Install the dependencies
 
 ```bash
-streamlit run app/anonimizador.py
+python -m pip install -r requirements.txt
 ```
 
 ---
 
-## Exemplo de uso
+## Running the Application
 
-1. O usuário carrega uma imagem ultrassonográfica;
-2. identifica regiões com dados sensíveis;
-3. aplica a anonimização visual;
-4. confere a imagem final;
-5. exporta a versão anonimizada.
+Start the Streamlit interface from the repository root:
 
-Esse fluxo pode apoiar o preparo de imagens para:
+```bash
+streamlit run app/main.py
+```
 
-- aulas;
-- estudos de caso;
-- apresentações;
-- portfólio técnico;
-- publicações;
-- bases de teste;
-- documentação interna.
+Streamlit will display the local application address in the terminal. It normally uses:
+
+```text
+http://localhost:8501
+```
 
 ---
 
-## Regras de anonimização
+## How to Use
 
-A documentação das regras de anonimização está disponível em:
+1. Start the application with `streamlit run app/main.py`.
+2. Select an anonymization mode in the sidebar:
+   - **Black bar** (`Tarja preta`);
+   - **Blur** (`Desfoque`);
+   - **Pixelation** (`Pixelização`).
+3. Keep the default 4% header and footer masks or adjust them for the ultrasound device layout.
+4. Upload between 1 and 10 PNG, JPG, or JPEG images.
+5. Compare the original and anonymized versions of the first image.
+6. Download the first anonymized image individually if desired.
+7. Download all anonymized images in the generated ZIP archive.
+8. Review every exported image before publishing or sharing it.
+
+If more than 10 files are selected, the application asks the user to remove the extra files before processing continues.
+
+---
+
+## Output Files
+
+Images in the ZIP archive use sequential filenames in the following format:
+
+```text
+usvet_anonimizada_001_original-name.png
+usvet_anonimizada_002_original-name.png
+usvet_anonimizada_003_original-name.png
+```
+
+The generated ZIP file is named:
+
+```text
+usvet_imagens_anonimizadas.zip
+```
+
+The application processes images in memory and does not require an external database for the current MVP.
+
+---
+
+## Running the Tests
+
+Run the automated test suite from the repository root:
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+The tests verify:
+
+- the default header and footer masks;
+- custom left and right masks;
+- PNG and RGB output;
+- removal of EXIF metadata from exported images.
+
+You can also check that all Python files compile successfully:
+
+```bash
+python -m compileall -q app tests
+```
+
+---
+
+## Anonymization Rules
+
+Detailed anonymization guidance is available in:
 
 - [`docs/regras_anonimizacao.md`](docs/regras_anonimizacao.md)
 
-Esse documento orienta quais informações devem ser removidas ou ocultadas antes do uso de imagens em contextos educacionais, acadêmicos ou técnicos.
+The following information should be removed whenever it could identify a patient, owner, professional, or institution:
+
+- patient name;
+- owner name;
+- clinic name;
+- professional name;
+- medical-record or examination number;
+- examination date;
+- phone number;
+- address;
+- equipment identification, when necessary;
+- any other visible personal information.
+
+Regional masking cannot guarantee that every sensitive field has been detected. Always review each anonymized image manually before external use.
 
 ---
 
-## Projeto relacionado
+## Ethical and Privacy Considerations
 
-Este projeto se conecta ao repositório [Ia-Vet-Doc](https://github.com/yasmine-vet-ads/Ia-Vet-Doc), voltado à organização, consulta e estruturação de documentos veterinários.
+This project is intended for educational, technical, and experimental purposes.
 
-Enquanto o **Us.Vet.Imagens.Anonimizador** tem foco na remoção de dados sensíveis em imagens ultrassonográficas, o **Ia-Vet-Doc** explora o processamento de documentos, laudos e informações técnicas com apoio de IA aplicada e consulta contextual.
+The tool does not replace human review or an organization's privacy and compliance procedures. Before using real clinical images, confirm that all information capable of identifying the following has been removed:
 
-Juntos, os dois projetos representam uma linha de desenvolvimento voltada à aplicação de tecnologia na rotina de diagnóstico por imagem veterinária, com atenção a:
+- the patient;
+- the owner;
+- the clinic or hospital;
+- the veterinary professional;
+- the examination date or number;
+- sensitive administrative information.
 
-- privacidade de dados;
-- documentação técnica;
-- organização de informações clínicas;
-- automação;
-- apoio à tomada de decisão;
-- inovação aplicada à Medicina Veterinária.
+Use of clinical images must comply with applicable privacy laws, consent requirements, professional ethics, and institutional policies.
 
-Essa conexão reforça a proposta de criar soluções digitais para problemas reais observados na rotina veterinária.
+For public repositories, use only:
 
----
-
-## Possível evolução integrada
-
-No futuro, os dois projetos podem compor um fluxo mais completo:
-
-1. anonimização de imagens ultrassonográficas;
-2. organização de laudos e documentos técnicos;
-3. consulta contextual a informações clínicas;
-4. estruturação de achados;
-5. apoio à documentação veterinária;
-6. preparação de dados para ensino, pesquisa e portfólio.
-
-Essa linha de evolução conecta imagem, texto, privacidade, automação e organização de dados clínicos.
+- fictional images;
+- images that have already been anonymized and manually reviewed;
+- demonstration screenshots;
+- simulated datasets.
 
 ---
 
-## Cuidados éticos
+## Limitations
 
-Este projeto tem finalidade educacional, técnica e experimental.
+- The application masks configured image regions; it does not automatically understand all text displayed in an image.
+- Sensitive information outside the selected borders may remain visible.
+- Different ultrasound devices may require different mask percentages.
+- Blur and pixelation may not be appropriate for highly sensitive text; a black bar provides stronger visual removal.
+- Every result requires manual review before publication, teaching, research, or sharing.
 
-A ferramenta não substitui revisão humana. Toda imagem anonimizada deve ser conferida antes de uso externo.
+---
 
-Antes de utilizar imagens reais, é necessário remover ou ocultar qualquer informação que permita identificar:
+## Related Project
 
-- paciente;
-- tutor;
-- clínica;
-- profissional;
-- data ou número de exame;
-- dados administrativos sensíveis.
+This project is related to [Ia-Vet-Doc](https://github.com/yasmine-vet-ads/Ia-Vet-Doc), which focuses on organizing, searching, and structuring veterinary documents.
 
-O uso de imagens deve respeitar princípios de privacidade, consentimento, ética profissional e legislação aplicável.
+While **Us.Vet Image Anonymizer** focuses on removing sensitive information from ultrasound images, **Ia-Vet-Doc** explores document processing, reports, and contextual access to technical information.
+
+Together, the projects represent a development path connecting:
+
+1. veterinary ultrasound image anonymization;
+2. organization of reports and technical documents;
+3. contextual access to clinical information;
+4. structured imaging findings;
+5. support for veterinary documentation;
+6. preparation of data for teaching, research, and portfolios.
 
 ---
 
 ## Roadmap
 
-- [x] Criar repositório inicial;
-- [x] estruturar aplicação;
-- [x] criar documentação inicial;
-- [x] adicionar exemplo de imagem anonimizada;
-- [x] organizar dependências;
-- [ ] melhorar interface;
-- [ ] documentar passo a passo com prints;
-- [ ] adicionar exemplos de antes/depois;
-- [ ] implementar processamento de múltiplas imagens;
-- [ ] estudar detecção semiautomática de texto;
-- [ ] integrar com fluxo de organização de documentos.
+- [x] Create the initial repository;
+- [x] structure the application;
+- [x] create the initial documentation;
+- [x] add an anonymized sample image;
+- [x] organize dependencies;
+- [x] process up to 10 images per batch;
+- [x] export the processed batch as a ZIP archive;
+- [x] add configurable header and footer masks;
+- [x] add automated tests;
+- [ ] improve the interface;
+- [ ] document the workflow with screenshots;
+- [ ] add more before-and-after examples;
+- [ ] add manual region selection;
+- [ ] investigate semi-automatic text detection;
+- [ ] integrate with document organization workflows.
 
 ---
 
-## Diferencial do projeto
+## Project Value
 
-Este projeto nasceu de uma necessidade real da rotina em diagnóstico por imagem veterinária.
+This project originated from a real need in veterinary diagnostic imaging workflows.
 
-Além de demonstrar conhecimentos em Python, Streamlit e processamento de imagens, o projeto mostra aplicação prática de tecnologia em um problema concreto: proteger dados sensíveis em imagens ultrassonográficas antes de uso educacional, acadêmico ou técnico.
+In addition to demonstrating practical knowledge of Python, Streamlit, OpenCV, image processing, and automated testing, it applies technology to a concrete challenge: protecting sensitive information in ultrasound images before educational, academic, or technical use.
 
-A proposta conecta Medicina Veterinária, diagnóstico por imagem, privacidade de dados, automação e desenvolvimento de soluções digitais aplicadas.
+The project connects veterinary medicine, diagnostic imaging, data privacy, automation, and the development of practical digital solutions.
 
 ---
 
-## Autora
+## Author
 
-Yasmine Santos  
-Estudante de Análise e Desenvolvimento de Sistemas — IFRS  
-Médica-veterinária especialista em Diagnóstico por Imagem  
+**Yasmine Santos**<br>
+Systems Analysis and Development student — IFRS<br>
+Veterinarian specialized in Diagnostic Imaging<br>
 GitHub: [yasmine-vet-ads](https://github.com/yasmine-vet-ads)
+
+---
+
+## License
+
+This project is distributed under the terms described in the [`LICENSE`](LICENSE) file.
