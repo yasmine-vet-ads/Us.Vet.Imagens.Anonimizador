@@ -133,7 +133,6 @@ Us.Vet.Imagens.Anonimizador/
 ├── .gitignore
 ├── LICENSE
 ├── README.md
-├── imagem_anonimizada.png
 └── requirements.txt
 ```
 
