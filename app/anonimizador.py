@@ -1,7 +1,8 @@
 from io import BytesIO
-from PIL import Image
-import numpy as np
+
 import cv2
+import numpy as np
+from PIL import Image
 
 
 def carregar_imagem(arquivo):
@@ -50,7 +51,12 @@ def aplicar_desfoque(regiao):
         return regiao
 
     kernel = max(21, ((min(altura, largura) // 8) * 2) + 1)
-    return cv2.GaussianBlur(regiao, (kernel, kernel), 0)
+
+    return cv2.GaussianBlur(
+        regiao,
+        (kernel, kernel),
+        0,
+    )
 
 
 def aplicar_pixelizacao(regiao, tamanho_pixel=12):
@@ -64,20 +70,30 @@ def aplicar_pixelizacao(regiao, tamanho_pixel=12):
 
     reduzida = cv2.resize(
         regiao,
-        (max(1, largura // tamanho_pixel), max(1, altura // tamanho_pixel)),
-        interpolation=cv2.INTER_LINEAR
+        (
+            max(1, largura // tamanho_pixel),
+            max(1, altura // tamanho_pixel),
+        ),
+        interpolation=cv2.INTER_LINEAR,
     )
 
     pixelizada = cv2.resize(
         reduzida,
         (largura, altura),
-        interpolation=cv2.INTER_NEAREST
+        interpolation=cv2.INTER_NEAREST,
     )
 
     return pixelizada
 
 
-def anonimizar_regiao(imagem_array, x1, y1, x2, y2, modo="tarja"):
+def anonimizar_regiao(
+    imagem_array,
+    x1,
+    y1,
+    x2,
+    y2,
+    modo="tarja",
+):
     """
     Aplica anonimização em uma região retangular da imagem.
     """
@@ -97,10 +113,13 @@ def anonimizar_regiao(imagem_array, x1, y1, x2, y2, modo="tarja"):
 
     if modo == "tarja":
         saida[y1:y2, x1:x2] = aplicar_tarja_preta(regiao)
+
     elif modo == "desfoque":
         saida[y1:y2, x1:x2] = aplicar_desfoque(regiao)
+
     elif modo == "pixelizacao":
         saida[y1:y2, x1:x2] = aplicar_pixelizacao(regiao)
+
     else:
         saida[y1:y2, x1:x2] = aplicar_tarja_preta(regiao)
 
@@ -111,7 +130,7 @@ def anonimizar_canto_inferior_direito(
     imagem,
     modo="tarja",
     largura_percent=55,
-    altura_percent=3
+    altura_percent=3,
 ):
     """
     Anonimiza apenas o canto inferior direito da imagem.
@@ -138,7 +157,7 @@ def anonimizar_canto_inferior_direito(
         y1,
         x2,
         y2,
-        modo
+        modo,
     )
 
     return array_para_pil(imagem_anonimizada)
@@ -150,3 +169,95 @@ def salvar_sem_metadados(imagem, caminho_saida):
     """
     imagem_limpa = imagem.convert("RGB")
     imagem_limpa.save(caminho_saida)
+
+
+def load_image(file):
+    """
+    Carrega um upload ou conteúdo em bytes como imagem RGB.
+    """
+    return carregar_imagem(file)
+
+
+def anonymize_image(
+    image,
+    mode="Tarja preta",
+    top_percent=4,
+    bottom_percent=4,
+    left_percent=0,
+    right_percent=0,
+):
+    """
+    Anonimiza faixas percentuais nas quatro bordas da imagem.
+
+    As faixas superior e inferior de 4% formam o perfil padrão para imagens
+    como a do exemplo. Elas cobrem o cabeçalho e o rodapé sem atingir a área
+    central do exame.
+
+    Percentuais iguais a zero não alteram aquela borda.
+    """
+    mode_map = {
+        "Tarja preta": "tarja",
+        "Desfoque": "desfoque",
+        "Pixelização": "pixelizacao",
+        "tarja": "tarja",
+        "desfoque": "desfoque",
+        "pixelizacao": "pixelizacao",
+    }
+
+    selected_mode = mode_map.get(mode, "tarja")
+
+    result = pil_para_array(image.convert("RGB"))
+    height, width = result.shape[:2]
+
+    regions = (
+        (
+            0,
+            0,
+            width,
+            round(height * top_percent / 100),
+        ),
+        (
+            0,
+            round(height * (100 - bottom_percent) / 100),
+            width,
+            height,
+        ),
+        (
+            0,
+            0,
+            round(width * left_percent / 100),
+            height,
+        ),
+        (
+            round(width * (100 - right_percent) / 100),
+            0,
+            width,
+            height,
+        ),
+    )
+
+    for x1, y1, x2, y2 in regions:
+        result = anonimizar_regiao(
+            result,
+            x1,
+            y1,
+            x2,
+            y2,
+            selected_mode,
+        )
+
+    return array_para_pil(result)
+
+
+def image_to_bytes(image, image_format="PNG"):
+    """
+    Serializa a imagem sem copiar EXIF ou outros metadados do original.
+    """
+    buffer = BytesIO()
+
+    image.convert("RGB").save(
+        buffer,
+        format=image_format,
+    )
+
+    return buffer.getvalue()
