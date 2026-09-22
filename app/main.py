@@ -1,9 +1,10 @@
 from io import BytesIO
 from zipfile import ZipFile
 from pathlib import Path
+
 import streamlit as st
 
-from anonymizer import load_image, anonymize_image, image_to_bytes
+from anonimizador import anonymize_image, image_to_bytes, load_image
 
 
 st.set_page_config(
@@ -41,7 +42,7 @@ with st.sidebar:
         "Faixa superior (%)",
         min_value=0,
         max_value=40,
-        value=12,
+        value=4,
         step=1,
     )
 
@@ -49,7 +50,7 @@ with st.sidebar:
         "Faixa inferior (%)",
         min_value=0,
         max_value=40,
-        value=0,
+        value=4,
         step=1,
     )
 
@@ -70,19 +71,26 @@ with st.sidebar:
     )
 
     st.info(
-        "Sugestão inicial: comece ocultando a faixa superior, "
-        "onde muitos aparelhos exibem dados sensíveis."
+        "O perfil inicial aplica tarjas de 4% em toda a largura do cabeçalho "
+        "e do rodapé, como no exemplo. Ajuste apenas se o aparelho usar outro layout."
     )
 
 
 uploaded_files = st.file_uploader(
-    "Envie uma ou mais imagens ultrassonográficas",
+    "Envie até 10 imagens ultrassonográficas",
     type=["png", "jpg", "jpeg"],
     accept_multiple_files=True,
 )
 
 
 if uploaded_files:
+    if len(uploaded_files) > 10:
+        st.error(
+            "O limite é de 10 imagens por lote. Remova "
+            f"{len(uploaded_files) - 10} arquivo(s) para continuar."
+        )
+        st.stop()
+
     st.success(f"{len(uploaded_files)} imagem(ns) carregada(s).")
 
     processed_images = []
@@ -138,16 +146,21 @@ if uploaded_files:
 
             processed_bytes = image_to_bytes(processed, "PNG")
 
-            safe_name = f"usvet_anonimizada_{index:03d}_{Path(uploaded_file.name).stem}.png"
-            zip_file.writestr(safe_name, processed_bytes)
+            safe_name = (
+                f"usvet_anonimizada_{index:03d}_"
+                f"{Path(uploaded_file.name).stem}.png"
+            )
 
+            zip_file.writestr(safe_name, processed_bytes)
             processed_images.append(safe_name)
 
-    st.write("Arquivos preparados para exportação:")
+    st.write(
+        f"{len(processed_images)} imagem(ns) pronta(s) para exportação:"
+    )
     st.write(processed_images)
 
     st.download_button(
-        label="Baixar lote anonimizado em ZIP",
+        label=f"Baixar as {len(processed_images)} imagens anonimizadas (ZIP)",
         data=zip_buffer.getvalue(),
         file_name="usvet_imagens_anonimizadas.zip",
         mime="application/zip",
