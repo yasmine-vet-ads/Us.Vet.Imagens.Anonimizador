@@ -12,7 +12,12 @@ sys.path.insert(
     str(Path(__file__).parents[1] / "app"),
 )
 
-from anonimizador import anonymize_image, image_to_bytes, load_image
+from anonimizador import (
+    anonymize_image,
+    generate_anonymized_filename,
+    image_to_bytes,
+    load_image,
+)
 
 
 class AnonymizerTest(unittest.TestCase):
@@ -80,6 +85,22 @@ class AnonymizerTest(unittest.TestCase):
         self.assertEqual(exported.format, "PNG")
         self.assertEqual(exported.mode, "RGB")
         self.assertFalse(exported.getexif())
+
+    def test_export_filename_does_not_reuse_original_name(self):
+        self.assertEqual(
+            generate_anonymized_filename(),
+            "imagem_anonimizada.png",
+        )
+
+        self.assertEqual(
+            generate_anonymized_filename(1),
+            "imagem_anonimizada_001.png",
+        )
+
+        self.assertEqual(
+            generate_anonymized_filename(10),
+            "imagem_anonimizada_010.png",
+        )
 
 
 if __name__ == "__main__":

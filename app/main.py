@@ -1,10 +1,14 @@
 from io import BytesIO
 from zipfile import ZipFile
-from pathlib import Path
 
 import streamlit as st
 
-from anonimizador import anonymize_image, image_to_bytes, load_image
+from anonimizador import (
+    anonymize_image,
+    generate_anonymized_filename,
+    image_to_bytes,
+    load_image,
+)
 
 
 st.set_page_config(
@@ -122,7 +126,7 @@ if uploaded_files:
     st.download_button(
         label="Baixar primeira imagem anonimizada",
         data=image_bytes,
-        file_name=f"anonimizada_{Path(first_file.name).stem}.png",
+        file_name=generate_anonymized_filename(),
         mime="image/png",
     )
 
@@ -146,10 +150,7 @@ if uploaded_files:
 
             processed_bytes = image_to_bytes(processed, "PNG")
 
-            safe_name = (
-                f"usvet_anonimizada_{index:03d}_"
-                f"{Path(uploaded_file.name).stem}.png"
-            )
+            safe_name = generate_anonymized_filename(index)
 
             zip_file.writestr(safe_name, processed_bytes)
             processed_images.append(safe_name)

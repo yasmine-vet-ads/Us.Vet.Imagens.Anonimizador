@@ -261,3 +261,19 @@ def image_to_bytes(image, image_format="PNG"):
     )
 
     return buffer.getvalue()
+
+def generate_anonymized_filename(index=None):
+    """
+    Gera um nome neutro para a imagem exportada.
+
+    O nome original do arquivo não é reutilizado porque pode conter
+    informações identificadoras, como nome do paciente, tutor,
+    prontuário ou outros dados sensíveis.
+    """
+    if index is None:
+        return "imagem_anonimizada.png"
+
+    if index < 1:
+        raise ValueError("O índice deve ser maior ou igual a 1.")
+
+    return f"imagem_anonimizada_{index:03d}.png"
