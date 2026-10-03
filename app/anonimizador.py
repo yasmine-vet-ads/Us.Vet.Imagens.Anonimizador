@@ -9,8 +9,8 @@ def carregar_imagem(arquivo):
     """
     Carrega uma imagem enviada no Colab ou em aplicação web e converte para RGB.
 
-    A conversão para RGB ajuda a padronizar o processamento e evita manter
-    metadados EXIF no arquivo final salvo posteriormente.
+    A conversão padroniza os pixels. A exportação reconstrói uma imagem limpa;
+    converter para RGB, isoladamente, não remove metadados do Pillow.
     """
     if isinstance(arquivo, bytes):
         imagem = Image.open(BytesIO(arquivo)).convert("RGB")
@@ -167,8 +167,8 @@ def salvar_sem_metadados(imagem, caminho_saida):
     """
     Salva a imagem anonimizada sem preservar metadados EXIF.
     """
-    imagem_limpa = imagem.convert("RGB")
-    imagem_limpa.save(caminho_saida)
+    imagem_limpa = Image.fromarray(np.array(imagem.convert("RGB")))
+    imagem_limpa.save(caminho_saida, format="PNG")
 
 
 def load_image(file):
@@ -189,9 +189,8 @@ def anonymize_image(
     """
     Anonimiza faixas percentuais nas quatro bordas da imagem.
 
-    As faixas superior e inferior de 4% formam o perfil padrão para imagens
-    como a do exemplo. Elas cobrem o cabeçalho e o rodapé sem atingir a área
-    central do exame.
+    As faixas de 4% são apenas um ponto de partida. Não há garantia de cobertura
+    dos identificadores ou de preservação diagnóstica para todos os layouts.
 
     Percentuais iguais a zero não alteram aquela borda.
     """
@@ -255,7 +254,7 @@ def image_to_bytes(image, image_format="PNG"):
     """
     buffer = BytesIO()
 
-    image.convert("RGB").save(
+    Image.fromarray(np.array(image.convert("RGB"))).save(
         buffer,
         format=image_format,
     )

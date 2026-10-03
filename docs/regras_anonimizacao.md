@@ -1,35 +1,30 @@
-# Regras de Anonimização
+# Regras de anonimização
 
-Este projeto tem como objetivo reduzir o risco de exposição de dados sensíveis presentes em imagens ultrassonográficas veterinárias.
+A ferramenta reduz a exposição de dados visíveis por máscaras nas bordas configuradas; não detecta identificadores automaticamente.
 
-## Dados que devem ser removidos
+## Conferência humana obrigatória
 
-- Nome do tutor.
-- Nome do paciente.
-- Nome da clínica.
-- Nome do profissional.
-- Número de prontuário.
-- Data do exame, se permitir identificação.
-- Telefone.
-- Endereço.
-- Identificação do equipamento, quando necessário.
-- Qualquer dado pessoal visível na imagem.
+Inspecione todas as saídas para conferir nomes de paciente, tutor, clínica e profissional, prontuário/ID, datas identificáveis, telefone, endereço e outros identificadores, inclusive fora das bordas. Verifique também se a região diagnóstica foi preservada suficientemente.
 
-## Estratégia do MVP
+Faixas iniciais de 4% não cobrem todos os layouts. Imagens pequenas podem ter faixas arredondadas para zero pixels. Desfoque e pixelização podem deixar texto reconhecível. Se o resultado não for adequado, ajuste a configuração, reprocesse e revise novamente; não confirme uma saída que ainda contém identificação.
 
-A primeira versão utiliza máscaras por região, pois muitos aparelhos exibem informações sensíveis em áreas previsíveis da imagem, especialmente na faixa superior.
+A interface apresenta todas as imagens bem-sucedidas, com comparação lado a lado ou vertical. O usuário declara **Revisei visualmente todas as imagens processadas** antes de liberar o único download: ZIP, mesmo para uma imagem. Arquivos inválidos bloqueiam processamento; falhas inesperadas são indicadas por item neutro e excluídas do ZIP.
 
-## Limitações
+Mudanças em lote, nome, conteúdo, ordem, modo ou máscaras invalidam resultados e revisão. Reprocessar exige nova confirmação.
 
-A anonimização automática pode falhar se os dados estiverem em regiões não configuradas.
+## Significado e autorização
 
-Toda imagem deve ser revisada manualmente antes de publicação, compartilhamento ou uso acadêmico.
+**ANONIMIZAÇÃO VERIFICADA** significa conferência humana visual declarada pelo usuário; o software não comprova que a revisão foi efetivamente realizada nem que todos os identificadores desapareceram.
 
-## Recomendação
+**ANONIMIZAÇÃO VERIFICADA ≠ AUTORIZAÇÃO EDITORIAL.**
+**ANONIMIZAÇÃO TÉCNICA ≠ AUTORIZAÇÃO EDITORIAL.**
 
-No GitHub público, utilizar apenas:
+Uma imagem tecnicamente anonimizada não se torna automaticamente autorizada para Learn, Case Atlas, Resources ou qualquer publicação. A autorização editorial deve ser obtida pelo processo próprio, fora desta ferramenta.
 
-- imagens fictícias;
-- imagens já anonimizadas;
-- prints de demonstração;
-- bases simuladas.
+## Saída e escopo
+
+PNG RGB, nomes neutros `imagem_anonimizada_NNN.png`, sem reutilizar o nome original. A saída é reconstruída a partir dos pixels. EXIF preenchido de entradas JPEG/PNG, texto PNG, ICC e DPI não são copiados nos casos sintéticos testados; não se promete remoção universal de metadados nem de identificação nos pixels.
+
+DICOM, OCR, IA, histórico e banco de imagens estão fora do MVP. O repositório e os testes devem conter somente dados sintéticos. Não copiar a pasta externa de teste humano para o Git.
+
+O fluxo Streamlit local trabalha em memória. O arquivo baixado persiste no computador do usuário; fechar a aba não implica exclusão imediata dos buffers. Consulte `sprint-anonimizador-mvp-flow.md` para os fatos técnicos de privacidade.

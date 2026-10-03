@@ -1,187 +1,88 @@
-from io import BytesIO
-from zipfile import ZipFile
-
 import streamlit as st
 
-from anonimizador import (
-    anonymize_image,
-    generate_anonymized_filename,
-    image_to_bytes,
-    load_image,
+from fluxo import (
+    Entrada, assinatura_lote, criar_zip_revisado, processar_lote,
+    sincronizar_revisao, validar_lote,
 )
 
 
-st.set_page_config(
-    page_title="Us.Vet Imagens Anonimizador",
-    page_icon="🩺",
-    layout="wide",
-)
-
-
+st.set_page_config(page_title="Us.Vet Imagens Anonimizador", page_icon="🩺", layout="wide")
 st.title("Us.Vet Imagens Anonimizador")
-st.subheader("MVP para anonimização de imagens ultrassonográficas veterinárias")
-
-st.markdown(
-    """
-Esta aplicação permite enviar imagens ultrassonográficas e aplicar anonimização automática
-em regiões que podem conter dados sensíveis, como nome de paciente, tutor, clínica,
-data ou número de exame.
-
-> Este MVP não substitui revisão humana. Sempre confira a imagem antes de usar ou compartilhar.
-"""
+st.caption("Upload → Validação → Processamento → Conferência → Download ZIP")
+st.warning(
+    "As máscaras podem não cobrir todos os identificadores. Revise visualmente cada "
+    "resultado e a preservação da região diagnóstica antes de usar ou compartilhar."
 )
-
+st.caption("ANONIMIZAÇÃO VERIFICADA significa conferência humana visual; não equivale a autorização editorial.")
 
 with st.sidebar:
-    st.header("Configurações")
+    st.header("Configurações do lote")
+    mode = st.selectbox("Tipo de anonimização", ["Tarja preta", "Desfoque", "Pixelização"])
+    top = st.slider("Faixa superior (%)", 0, 40, 4)
+    bottom = st.slider("Faixa inferior (%)", 0, 40, 4)
+    left = st.slider("Lateral esquerda (%)", 0, 40, 0)
+    right = st.slider("Lateral direita (%)", 0, 40, 0)
+    st.info("4% é apenas um ponto de partida. Ajuste as máscaras e confira todos os resultados. Desfoque e pixelização podem deixar texto reconhecível.")
 
-    mode = st.selectbox(
-        "Tipo de anonimização",
-        ["Tarja preta", "Desfoque", "Pixelização"],
-    )
+configuracao = dict(mode=mode, top_percent=top, bottom_percent=bottom,
+                    left_percent=left, right_percent=right)
+st.header("1. Upload e validação")
+uploads = st.file_uploader("Selecione de 1 a 10 imagens PNG/JPG/JPEG",
+                           type=["png", "jpg", "jpeg"], accept_multiple_files=True,
+                           key="uploads")
+entradas = [Entrada(arquivo.name, arquivo.getvalue()) for arquivo in (uploads or [])]
+sincronizar_revisao(st.session_state, assinatura_lote(entradas, configuracao))
 
-    st.markdown("### Regiões sensíveis")
-
-    top_percent = st.slider(
-        "Faixa superior (%)",
-        min_value=0,
-        max_value=40,
-        value=4,
-        step=1,
-    )
-
-    bottom_percent = st.slider(
-        "Faixa inferior (%)",
-        min_value=0,
-        max_value=40,
-        value=4,
-        step=1,
-    )
-
-    left_percent = st.slider(
-        "Lateral esquerda (%)",
-        min_value=0,
-        max_value=40,
-        value=0,
-        step=1,
-    )
-
-    right_percent = st.slider(
-        "Lateral direita (%)",
-        min_value=0,
-        max_value=40,
-        value=0,
-        step=1,
-    )
-
-    st.info(
-        "O perfil inicial aplica tarjas de 4% em toda a largura do cabeçalho "
-        "e do rodapé, como no exemplo. Ajuste apenas se o aparelho usar outro layout."
-    )
-
-
-uploaded_files = st.file_uploader(
-    "Envie até 10 imagens ultrassonográficas",
-    type=["png", "jpg", "jpeg"],
-    accept_multiple_files=True,
-)
-
-
-if uploaded_files:
-    if len(uploaded_files) > 10:
-        st.error(
-            "O limite é de 10 imagens por lote. Remova "
-            f"{len(uploaded_files) - 10} arquivo(s) para continuar."
-        )
-        st.stop()
-
-    st.success(f"{len(uploaded_files)} imagem(ns) carregada(s).")
-
-    processed_images = []
-
-    first_file = uploaded_files[0]
-    original_image = load_image(first_file)
-
-    anonymized_image = anonymize_image(
-        original_image,
-        mode=mode,
-        top_percent=top_percent,
-        bottom_percent=bottom_percent,
-        left_percent=left_percent,
-        right_percent=right_percent,
-    )
-
-    col1, col2 = st.columns(2)
-
-    with col1:
-        st.markdown("### Imagem original")
-        st.image(original_image, use_container_width=True)
-
-    with col2:
-        st.markdown("### Imagem anonimizada")
-        st.image(anonymized_image, use_container_width=True)
-
-    image_bytes = image_to_bytes(anonymized_image, "PNG")
-
-    st.download_button(
-        label="Baixar primeira imagem anonimizada",
-        data=image_bytes,
-        file_name=generate_anonymized_filename(),
-        mime="image/png",
-    )
-
-    st.markdown("---")
-    st.markdown("### Processamento em lote")
-
-    zip_buffer = BytesIO()
-
-    with ZipFile(zip_buffer, "w") as zip_file:
-        for index, uploaded_file in enumerate(uploaded_files, start=1):
-            image = load_image(uploaded_file)
-
-            processed = anonymize_image(
-                image,
-                mode=mode,
-                top_percent=top_percent,
-                bottom_percent=bottom_percent,
-                left_percent=left_percent,
-                right_percent=right_percent,
-            )
-
-            processed_bytes = image_to_bytes(processed, "PNG")
-
-            safe_name = generate_anonymized_filename(index)
-
-            zip_file.writestr(safe_name, processed_bytes)
-            processed_images.append(safe_name)
-
-    st.write(
-        f"{len(processed_images)} imagem(ns) pronta(s) para exportação:"
-    )
-    st.write(processed_images)
-
-    st.download_button(
-        label=f"Baixar as {len(processed_images)} imagens anonimizadas (ZIP)",
-        data=zip_buffer.getvalue(),
-        file_name="usvet_imagens_anonimizadas.zip",
-        mime="application/zip",
-    )
-
+if not entradas:
+    st.info("Envie imagens para iniciar. Os resultados e a revisão anterior foram descartados.")
 else:
-    st.warning("Envie uma imagem para iniciar o processamento.")
-
-
-st.markdown("---")
-
-st.markdown(
-    """
-### Próximas versões previstas
-
-- Seleção manual de áreas sensíveis.
-- Perfis de máscara por modelo de aparelho.
-- OCR para detecção automática de texto.
-- Registro de histórico de imagens processadas.
-- Banco de imagens anonimizado.
-- Classificação por órgão, espécie e achado ultrassonográfico.
-"""
-)
+    erros = validar_lote(entradas)
+    for erro in erros:
+        st.error(f"{erro.referencia}: {erro.mensagem}" if erro.indice else erro.mensagem)
+    if erros:
+        st.info("Remova ou substitua os itens indicados no seletor de upload antes de processar.")
+    else:
+        st.success(f"Lote validado: {len(entradas)} imagem(ns).")
+    st.header("2. Processamento")
+    if st.button("Processar lote", disabled=bool(erros)):
+        st.session_state.revisado = False
+        st.session_state.resultados = []
+        st.session_state.falhas = []
+        with st.spinner("Processando imagens…"):
+            try:
+                resultados, falhas = processar_lote(entradas, configuracao)
+                st.session_state.resultados = resultados
+                st.session_state.falhas = falhas
+            except ValueError:
+                st.error("O lote não passou pela validação. Corrija os arquivos e tente novamente.")
+    for falha in st.session_state.falhas:
+        st.error(f"{falha.referencia}: {falha.mensagem}")
+    resultados = st.session_state.resultados
+    if resultados and not erros:
+        st.header("3. Conferência visual")
+        st.write(f"Confira todas as {len(resultados)} imagens abaixo: máscaras, região diagnóstica e ausência aparente de identificação residual.")
+        visualizacao = st.radio("Disposição da comparação", ["Lado a lado", "Vertical (telas menores)"])
+        for resultado in resultados:
+            st.subheader(f"Item {resultado.indice:03d}")
+            if visualizacao == "Lado a lado":
+                original, anonimizada = st.columns(2)
+                with original:
+                    st.image(resultado.original, caption="Original", width="stretch")
+                with anonimizada:
+                    st.image(resultado.anonimizada, caption="Anonimizada", width="stretch")
+            else:
+                st.image(resultado.original, caption="Original", width="stretch")
+                st.image(resultado.anonimizada, caption="Anonimizada", width="stretch")
+        revisado = st.checkbox("Revisei visualmente todas as imagens processadas.", key="revisado")
+        st.header("4. Download ZIP")
+        if revisado:
+            st.success("ANONIMIZAÇÃO VERIFICADA: revisão visual declarada pelo usuário.")
+            st.download_button("Baixar imagens revisadas (ZIP)",
+                               data=criar_zip_revisado(resultados, revisado),
+                               file_name="usvet_imagens_anonimizadas.zip", mime="application/zip")
+        else:
+            st.info("O ZIP será liberado após a confirmação de revisão visual de todas as imagens processadas.")
+    elif st.session_state.falhas:
+        st.warning("Nenhuma imagem foi processada com sucesso. Não há ZIP disponível.")
+    elif not erros:
+        st.info("Configure as máscaras e clique em Processar lote para continuar.")
