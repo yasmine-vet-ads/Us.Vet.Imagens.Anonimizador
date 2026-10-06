@@ -1,0 +1,674 @@
+[
+  {
+    "zip": "Chrome-tarja-1-stress.zip",
+    "item": 1,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Chrome-tarja-5-stress.zip",
+    "item": 1,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Chrome-tarja-5-stress.zip",
+    "item": 2,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Chrome-tarja-5-stress.zip",
+    "item": 3,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Chrome-tarja-5-stress.zip",
+    "item": 4,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Chrome-tarja-5-stress.zip",
+    "item": 5,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Chrome-tarja-10-stress.zip",
+    "item": 1,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Chrome-tarja-10-stress.zip",
+    "item": 2,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Chrome-tarja-10-stress.zip",
+    "item": 3,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Chrome-tarja-10-stress.zip",
+    "item": 4,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Chrome-tarja-10-stress.zip",
+    "item": 5,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Chrome-tarja-10-stress.zip",
+    "item": 6,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Chrome-tarja-10-stress.zip",
+    "item": 7,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Chrome-tarja-10-stress.zip",
+    "item": 8,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Chrome-tarja-10-stress.zip",
+    "item": 9,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Chrome-tarja-10-stress.zip",
+    "item": 10,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Edge-tarja-1-stress.zip",
+    "item": 1,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Edge-tarja-5-stress.zip",
+    "item": 1,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Edge-tarja-5-stress.zip",
+    "item": 2,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Edge-tarja-5-stress.zip",
+    "item": 3,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Edge-tarja-5-stress.zip",
+    "item": 4,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Edge-tarja-5-stress.zip",
+    "item": 5,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Edge-tarja-10-stress.zip",
+    "item": 1,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Edge-tarja-10-stress.zip",
+    "item": 2,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Edge-tarja-10-stress.zip",
+    "item": 3,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Edge-tarja-10-stress.zip",
+    "item": 4,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Edge-tarja-10-stress.zip",
+    "item": 5,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Edge-tarja-10-stress.zip",
+    "item": 6,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Edge-tarja-10-stress.zip",
+    "item": 7,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Edge-tarja-10-stress.zip",
+    "item": 8,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Edge-tarja-10-stress.zip",
+    "item": 9,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Edge-tarja-10-stress.zip",
+    "item": 10,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Firefox-tarja-1-stress.zip",
+    "item": 1,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Firefox-tarja-5-stress.zip",
+    "item": 1,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Firefox-tarja-5-stress.zip",
+    "item": 2,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Firefox-tarja-5-stress.zip",
+    "item": 3,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Firefox-tarja-5-stress.zip",
+    "item": 4,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Firefox-tarja-5-stress.zip",
+    "item": 5,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Firefox-tarja-10-stress.zip",
+    "item": 1,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Firefox-tarja-10-stress.zip",
+    "item": 2,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Firefox-tarja-10-stress.zip",
+    "item": 3,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Firefox-tarja-10-stress.zip",
+    "item": 4,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Firefox-tarja-10-stress.zip",
+    "item": 5,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Firefox-tarja-10-stress.zip",
+    "item": 6,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Firefox-tarja-10-stress.zip",
+    "item": 7,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Firefox-tarja-10-stress.zip",
+    "item": 8,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Firefox-tarja-10-stress.zip",
+    "item": 9,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  {
+    "zip": "Firefox-tarja-10-stress.zip",
+    "item": 10,
+    "width": 4000,
+    "height": 3000,
+    "max": 0,
+    "mean": 0.0,
+    "rgb": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  }
+]

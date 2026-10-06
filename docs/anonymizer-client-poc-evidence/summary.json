@@ -1,0 +1,1525 @@
+{
+  "date": "2026-10-06",
+  "base": "dd8513c9fd227ad64e0eff7e7010a93be500ef5f",
+  "branch": "codex/anonymizer-client-poc",
+  "worktree": "C:/Users/USER/.codex/worktrees/anonymizer-client-poc/Us.Vet.Imagens.Anonimizador",
+  "classification": "GO COM RESSALVAS",
+  "scope": "Human POC tests of validated desktop corpus; not public replacement or deploy",
+  "runtimeDependencies": [],
+  "devDependencies": {
+    "esbuild": "0.25.10",
+    "typescript": "5.9.3",
+    "playwright": "1.56.1"
+  },
+  "assetSizes": {
+    "index.html": {
+      "bytes": 3060,
+      "sha256": "f0b892fb63db6f648f6434a36659e484a888f4d13b4dd2dc532b9e3cd06de41f"
+    },
+    "main.js": {
+      "bytes": 8385,
+      "sha256": "73a37a3a50424579267f2c9e429da0ca952759f245186f46be840056df65a741"
+    },
+    "style.css": {
+      "bytes": 3356,
+      "sha256": "6862545ba5beab9073ca59f50c5df9d507d1ef0ee8b87b8748d5e78ce7dd8a11"
+    },
+    "worker.js": {
+      "bytes": 12638,
+      "sha256": "777a9138036b8cde89ded8fc31118853a9431f17e8cd8a0dd1baac2e1ea979fd"
+    }
+  },
+  "originalPythonTests": {
+    "passed": 42,
+    "modified": false,
+    "streamlit": "1.65.0"
+  },
+  "core": {
+    "groupsPassed": 6,
+    "pixelComparisons": 116,
+    "invalidFixtures": 14,
+    "syntheticValidFixtures": 28,
+    "roundMaskComparisons": 101000
+  },
+  "independentPillowOpenCV": {
+    "functionalImages": 144,
+    "stressImages": 48,
+    "maxFunctional": 1,
+    "meanFunctionalMaximum": 0.000525,
+    "maxStress": 0
+  },
+  "browsers": [
+    {
+      "name": "Chrome",
+      "version": "155.0.8059.27",
+      "pixelCases": 156,
+      "metrics": {
+        "none": {
+          "max": 0,
+          "meanMaximum": 0,
+          "borderMaximum": 0
+        },
+        "top": {
+          "max": 0,
+          "meanMaximum": 0,
+          "borderMaximum": 0
+        },
+        "bottom": {
+          "max": 0,
+          "meanMaximum": 0,
+          "borderMaximum": 0
+        },
+        "left": {
+          "max": 0,
+          "meanMaximum": 0,
+          "borderMaximum": 0
+        },
+        "right": {
+          "max": 0,
+          "meanMaximum": 0,
+          "borderMaximum": 0
+        },
+        "all": {
+          "max": 0,
+          "meanMaximum": 0,
+          "borderMaximum": 0
+        },
+        "blur": {
+          "max": 0,
+          "meanMaximum": 0,
+          "borderMaximum": 0
+        },
+        "pixel": {
+          "max": 1,
+          "meanMaximum": 0.2532418001525553,
+          "borderMaximum": 1
+        }
+      },
+      "functional": [
+        {
+          "count": 1,
+          "mode": "tarja",
+          "corpus": "1600x1200",
+          "totalMs": 637,
+          "validationMs": 153,
+          "zipMs": 207,
+          "fullFlowMs": 1103,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 0.580 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 3.7999999970197678,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 4614615,
+              "total": 9527915
+            }
+          },
+          "zipBytes": 5303415
+        },
+        {
+          "count": 5,
+          "mode": "tarja",
+          "corpus": "1600x1200",
+          "totalMs": 2965,
+          "validationMs": 682,
+          "zipMs": 659,
+          "fullFlowMs": 4417,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 0.566 s",
+            "Item 002 · 1600 × 1200 · 0.580 s",
+            "Item 003 · 1600 × 1200 · 0.576 s",
+            "Item 004 · 1600 × 1200 · 0.577 s",
+            "Item 005 · 1600 × 1200 · 0.588 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 11.700000002980232,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 4637868,
+              "total": 9265080
+            }
+          },
+          "zipBytes": 26517075
+        },
+        {
+          "count": 10,
+          "mode": "tarja",
+          "corpus": "1600x1200",
+          "totalMs": 5885,
+          "validationMs": 1314,
+          "zipMs": 1115,
+          "fullFlowMs": 8390,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 0.590 s",
+            "Item 002 · 1600 × 1200 · 0.567 s",
+            "Item 003 · 1600 × 1200 · 0.582 s",
+            "Item 004 · 1600 × 1200 · 0.584 s",
+            "Item 005 · 1600 × 1200 · 0.576 s",
+            "Item 006 · 1600 × 1200 · 0.580 s",
+            "Item 007 · 1600 × 1200 · 0.570 s",
+            "Item 008 · 1600 × 1200 · 0.574 s",
+            "Item 009 · 1600 × 1200 · 0.569 s",
+            "Item 010 · 1600 × 1200 · 0.576 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 13.600000008940697,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 4672631,
+              "total": 10049971
+            }
+          },
+          "zipBytes": 53034150
+        },
+        {
+          "count": 1,
+          "mode": "desfoque",
+          "corpus": "1600x1200",
+          "totalMs": 1143,
+          "validationMs": 174,
+          "zipMs": 248,
+          "fullFlowMs": 1778,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 1.073 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 64,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 4645096,
+              "total": 8738396
+            }
+          },
+          "zipBytes": 5703587
+        },
+        {
+          "count": 5,
+          "mode": "desfoque",
+          "corpus": "1600x1200",
+          "totalMs": 5399,
+          "validationMs": 661,
+          "zipMs": 663,
+          "fullFlowMs": 6852,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 1.062 s",
+            "Item 002 · 1600 × 1200 · 1.087 s",
+            "Item 003 · 1600 × 1200 · 1.073 s",
+            "Item 004 · 1600 × 1200 · 1.062 s",
+            "Item 005 · 1600 × 1200 · 1.056 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 12.099999994039536,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 5031935,
+              "total": 9001035
+            }
+          },
+          "zipBytes": 28517935
+        },
+        {
+          "count": 10,
+          "mode": "desfoque",
+          "corpus": "1600x1200",
+          "totalMs": 10945,
+          "validationMs": 1360,
+          "zipMs": 2196,
+          "fullFlowMs": 14618,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 1.095 s",
+            "Item 002 · 1600 × 1200 · 1.079 s",
+            "Item 003 · 1600 × 1200 · 1.090 s",
+            "Item 004 · 1600 × 1200 · 1.090 s",
+            "Item 005 · 1600 × 1200 · 1.072 s",
+            "Item 006 · 1600 × 1200 · 1.078 s",
+            "Item 007 · 1600 × 1200 · 1.091 s",
+            "Item 008 · 1600 × 1200 · 1.072 s",
+            "Item 009 · 1600 × 1200 · 1.073 s",
+            "Item 010 · 1600 × 1200 · 1.111 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 14.200000002980232,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 4680482,
+              "total": 6638634
+            }
+          },
+          "zipBytes": 57035870
+        },
+        {
+          "count": 1,
+          "mode": "pixelizacao",
+          "corpus": "1600x1200",
+          "totalMs": 639,
+          "validationMs": 159,
+          "zipMs": 1457,
+          "fullFlowMs": 2438,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 0.580 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 17.5,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 4667302,
+              "total": 7162634
+            }
+          },
+          "zipBytes": 5310080
+        },
+        {
+          "count": 5,
+          "mode": "pixelizacao",
+          "corpus": "1600x1200",
+          "totalMs": 2954,
+          "validationMs": 669,
+          "zipMs": 5512,
+          "fullFlowMs": 9241,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 0.586 s",
+            "Item 002 · 1600 × 1200 · 0.578 s",
+            "Item 003 · 1600 × 1200 · 0.575 s",
+            "Item 004 · 1600 × 1200 · 0.573 s",
+            "Item 005 · 1600 × 1200 · 0.577 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 26.30000001192093,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 4559270,
+              "total": 5327382
+            }
+          },
+          "zipBytes": 26550400
+        },
+        {
+          "count": 10,
+          "mode": "pixelizacao",
+          "corpus": "1600x1200",
+          "totalMs": 5856,
+          "validationMs": 1278,
+          "zipMs": 980,
+          "fullFlowMs": 8235,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 0.561 s",
+            "Item 002 · 1600 × 1200 · 0.578 s",
+            "Item 003 · 1600 × 1200 · 0.578 s",
+            "Item 004 · 1600 × 1200 · 0.586 s",
+            "Item 005 · 1600 × 1200 · 0.579 s",
+            "Item 006 · 1600 × 1200 · 0.574 s",
+            "Item 007 · 1600 × 1200 · 0.576 s",
+            "Item 008 · 1600 × 1200 · 0.575 s",
+            "Item 009 · 1600 × 1200 · 0.577 s",
+            "Item 010 · 1600 × 1200 · 0.578 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 29,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 4715211,
+              "total": 6638571
+            }
+          },
+          "zipBytes": 53100800
+        }
+      ],
+      "stress": [
+        {
+          "count": 1,
+          "mode": "tarja",
+          "corpus": "4000x3000",
+          "totalMs": 3604,
+          "validationMs": 809,
+          "zipMs": 1408,
+          "fullFlowMs": 6100,
+          "perImage": [
+            "Item 001 · 4000 × 3000 · 3.531 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 164,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 2474705,
+              "total": 5064953
+            }
+          },
+          "zipBytes": 33074596
+        },
+        {
+          "count": 5,
+          "mode": "tarja",
+          "corpus": "4000x3000",
+          "totalMs": 17727,
+          "validationMs": 3793,
+          "zipMs": 5611,
+          "fullFlowMs": 27619,
+          "perImage": [
+            "Item 001 · 4000 × 3000 · 3.637 s",
+            "Item 002 · 4000 × 3000 · 3.681 s",
+            "Item 003 · 4000 × 3000 · 3.471 s",
+            "Item 004 · 4000 × 3000 · 3.457 s",
+            "Item 005 · 4000 × 3000 · 3.379 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 343.79999999701977,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 2527600,
+              "total": 4540856
+            }
+          },
+          "zipBytes": 165372980
+        },
+        {
+          "count": 10,
+          "mode": "tarja",
+          "corpus": "4000x3000",
+          "totalMs": 34938,
+          "validationMs": 7773,
+          "zipMs": 12475,
+          "fullFlowMs": 55500,
+          "perImage": [
+            "Item 001 · 4000 × 3000 · 3.377 s",
+            "Item 002 · 4000 × 3000 · 3.505 s",
+            "Item 003 · 4000 × 3000 · 3.453 s",
+            "Item 004 · 4000 × 3000 · 3.622 s",
+            "Item 005 · 4000 × 3000 · 3.553 s",
+            "Item 006 · 4000 × 3000 · 3.667 s",
+            "Item 007 · 4000 × 3000 · 3.385 s",
+            "Item 008 · 4000 × 3000 · 3.403 s",
+            "Item 009 · 4000 × 3000 · 3.360 s",
+            "Item 010 · 4000 × 3000 · 3.410 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 158.09999999403954,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 2435124,
+              "total": 3491908
+            }
+          },
+          "zipBytes": 330745960
+        }
+      ],
+      "nativeCanvasPNG": {
+        "color": 6,
+        "depth": 8,
+        "chunks": [
+          "IHDR",
+          "IDAT",
+          "IDAT",
+          "IEND"
+        ]
+      },
+      "orientationProbe": [
+        {
+          "orientation": 1,
+          "width": 125,
+          "height": 75
+        },
+        {
+          "orientation": 2,
+          "width": 125,
+          "height": 75
+        },
+        {
+          "orientation": 3,
+          "width": 125,
+          "height": 75
+        },
+        {
+          "orientation": 4,
+          "width": 125,
+          "height": 75
+        },
+        {
+          "orientation": 5,
+          "width": 75,
+          "height": 125
+        },
+        {
+          "orientation": 6,
+          "width": 75,
+          "height": 125
+        },
+        {
+          "orientation": 7,
+          "width": 75,
+          "height": 125
+        },
+        {
+          "orientation": 8,
+          "width": 75,
+          "height": 125
+        }
+      ],
+      "forcedCanvasFallback": {
+        "max": 0,
+        "mean": 0,
+        "borderMax": 0
+      },
+      "offline": true,
+      "processingNetworkRequests": 0,
+      "networkAPIInvocations": 0,
+      "crashes": 0,
+      "errors": [],
+      "objectURLs": {
+        "functional": {
+          "created": 409,
+          "revoked": 409
+        },
+        "extra": {
+          "created": 133,
+          "revoked": 133
+        },
+        "stress": {
+          "created": 12,
+          "revoked": 12
+        }
+      }
+    },
+    {
+      "name": "Edge",
+      "version": "154.0.4258.53",
+      "pixelCases": 156,
+      "metrics": {
+        "none": {
+          "max": 0,
+          "meanMaximum": 0,
+          "borderMaximum": 0
+        },
+        "top": {
+          "max": 0,
+          "meanMaximum": 0,
+          "borderMaximum": 0
+        },
+        "bottom": {
+          "max": 0,
+          "meanMaximum": 0,
+          "borderMaximum": 0
+        },
+        "left": {
+          "max": 0,
+          "meanMaximum": 0,
+          "borderMaximum": 0
+        },
+        "right": {
+          "max": 0,
+          "meanMaximum": 0,
+          "borderMaximum": 0
+        },
+        "all": {
+          "max": 0,
+          "meanMaximum": 0,
+          "borderMaximum": 0
+        },
+        "blur": {
+          "max": 0,
+          "meanMaximum": 0,
+          "borderMaximum": 0
+        },
+        "pixel": {
+          "max": 1,
+          "meanMaximum": 0.2532418001525553,
+          "borderMaximum": 1
+        }
+      },
+      "functional": [
+        {
+          "count": 1,
+          "mode": "tarja",
+          "corpus": "1600x1200",
+          "totalMs": 658,
+          "validationMs": 144,
+          "zipMs": 278,
+          "fullFlowMs": 1148,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 0.586 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 14.400000005960464,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 4652102,
+              "total": 7954862
+            }
+          },
+          "zipBytes": 5303415
+        },
+        {
+          "count": 5,
+          "mode": "tarja",
+          "corpus": "1600x1200",
+          "totalMs": 3029,
+          "validationMs": 662,
+          "zipMs": 594,
+          "fullFlowMs": 4398,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 0.594 s",
+            "Item 002 · 1600 × 1200 · 0.595 s",
+            "Item 003 · 1600 × 1200 · 0.588 s",
+            "Item 004 · 1600 × 1200 · 0.584 s",
+            "Item 005 · 1600 × 1200 · 0.588 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 13.200000002980232,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 4662715,
+              "total": 7429883
+            }
+          },
+          "zipBytes": 26517075
+        },
+        {
+          "count": 10,
+          "mode": "tarja",
+          "corpus": "1600x1200",
+          "totalMs": 6196,
+          "validationMs": 1331,
+          "zipMs": 1042,
+          "fullFlowMs": 8681,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 0.614 s",
+            "Item 002 · 1600 × 1200 · 0.613 s",
+            "Item 003 · 1600 × 1200 · 0.605 s",
+            "Item 004 · 1600 × 1200 · 0.596 s",
+            "Item 005 · 1600 × 1200 · 0.613 s",
+            "Item 006 · 1600 × 1200 · 0.589 s",
+            "Item 007 · 1600 × 1200 · 0.614 s",
+            "Item 008 · 1600 × 1200 · 0.597 s",
+            "Item 009 · 1600 × 1200 · 0.608 s",
+            "Item 010 · 1600 × 1200 · 0.611 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 33.900000005960464,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 4653647,
+              "total": 6641847
+            }
+          },
+          "zipBytes": 53034150
+        },
+        {
+          "count": 1,
+          "mode": "desfoque",
+          "corpus": "1600x1200",
+          "totalMs": 1206,
+          "validationMs": 150,
+          "zipMs": 232,
+          "fullFlowMs": 1655,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 1.118 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 13.600000008940697,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 5002483,
+              "total": 6904363
+            }
+          },
+          "zipBytes": 5703587
+        },
+        {
+          "count": 5,
+          "mode": "desfoque",
+          "corpus": "1600x1200",
+          "totalMs": 5619,
+          "validationMs": 695,
+          "zipMs": 632,
+          "fullFlowMs": 7055,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 1.098 s",
+            "Item 002 · 1600 × 1200 · 1.101 s",
+            "Item 003 · 1600 × 1200 · 1.106 s",
+            "Item 004 · 1600 × 1200 · 1.110 s",
+            "Item 005 · 1600 × 1200 · 1.122 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 61.19999998807907,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 4692523,
+              "total": 5853499
+            }
+          },
+          "zipBytes": 28517935
+        },
+        {
+          "count": 10,
+          "mode": "desfoque",
+          "corpus": "1600x1200",
+          "totalMs": 11364,
+          "validationMs": 1339,
+          "zipMs": 1240,
+          "fullFlowMs": 14071,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 1.100 s",
+            "Item 002 · 1600 × 1200 · 1.141 s",
+            "Item 003 · 1600 × 1200 · 1.132 s",
+            "Item 004 · 1600 × 1200 · 1.103 s",
+            "Item 005 · 1600 × 1200 · 1.119 s",
+            "Item 006 · 1600 × 1200 · 1.116 s",
+            "Item 007 · 1600 × 1200 · 1.126 s",
+            "Item 008 · 1600 × 1200 · 1.147 s",
+            "Item 009 · 1600 × 1200 · 1.108 s",
+            "Item 010 · 1600 × 1200 · 1.129 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 13.799999997019768,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 5160518,
+              "total": 6378434
+            }
+          },
+          "zipBytes": 57035870
+        },
+        {
+          "count": 1,
+          "mode": "pixelizacao",
+          "corpus": "1600x1200",
+          "totalMs": 708,
+          "validationMs": 185,
+          "zipMs": 219,
+          "fullFlowMs": 1311,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 0.651 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 40.20000000298023,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 4701346,
+              "total": 6900490
+            }
+          },
+          "zipBytes": 5310080
+        },
+        {
+          "count": 5,
+          "mode": "pixelizacao",
+          "corpus": "1600x1200",
+          "totalMs": 3181,
+          "validationMs": 740,
+          "zipMs": 576,
+          "fullFlowMs": 4573,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 0.621 s",
+            "Item 002 · 1600 × 1200 · 0.606 s",
+            "Item 003 · 1600 × 1200 · 0.611 s",
+            "Item 004 · 1600 × 1200 · 0.615 s",
+            "Item 005 · 1600 × 1200 · 0.610 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 14.200000002980232,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 5101104,
+              "total": 7425276
+            }
+          },
+          "zipBytes": 26550400
+        },
+        {
+          "count": 10,
+          "mode": "pixelizacao",
+          "corpus": "1600x1200",
+          "totalMs": 6349,
+          "validationMs": 1317,
+          "zipMs": 1294,
+          "fullFlowMs": 9068,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 0.652 s",
+            "Item 002 · 1600 × 1200 · 0.626 s",
+            "Item 003 · 1600 × 1200 · 0.642 s",
+            "Item 004 · 1600 × 1200 · 0.627 s",
+            "Item 005 · 1600 × 1200 · 0.629 s",
+            "Item 006 · 1600 × 1200 · 0.610 s",
+            "Item 007 · 1600 × 1200 · 0.616 s",
+            "Item 008 · 1600 × 1200 · 0.599 s",
+            "Item 009 · 1600 × 1200 · 0.610 s",
+            "Item 010 · 1600 × 1200 · 0.608 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 35.1000000089407,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 4727926,
+              "total": 6376490
+            }
+          },
+          "zipBytes": 53100800
+        }
+      ],
+      "stress": [
+        {
+          "count": 1,
+          "mode": "tarja",
+          "corpus": "4000x3000",
+          "totalMs": 3761,
+          "validationMs": 851,
+          "zipMs": 1569,
+          "fullFlowMs": 6421,
+          "perImage": [
+            "Item 001 · 4000 × 3000 · 3.686 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 156.6000000089407,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 2480197,
+              "total": 5327097
+            }
+          },
+          "zipBytes": 33074596
+        },
+        {
+          "count": 5,
+          "mode": "tarja",
+          "corpus": "4000x3000",
+          "totalMs": 17707,
+          "validationMs": 3613,
+          "zipMs": 5587,
+          "fullFlowMs": 27401,
+          "perImage": [
+            "Item 001 · 4000 × 3000 · 3.512 s",
+            "Item 002 · 4000 × 3000 · 3.486 s",
+            "Item 003 · 4000 × 3000 · 3.508 s",
+            "Item 004 · 4000 × 3000 · 3.509 s",
+            "Item 005 · 4000 × 3000 · 3.559 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 335.79999999701977,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 2535332,
+              "total": 4278712
+            }
+          },
+          "zipBytes": 165372980
+        },
+        {
+          "count": 10,
+          "mode": "tarja",
+          "corpus": "4000x3000",
+          "totalMs": 38223,
+          "validationMs": 8160,
+          "zipMs": 13790,
+          "fullFlowMs": 60487,
+          "perImage": [
+            "Item 001 · 4000 × 3000 · 4.162 s",
+            "Item 002 · 4000 × 3000 · 4.152 s",
+            "Item 003 · 4000 × 3000 · 4.097 s",
+            "Item 004 · 4000 × 3000 · 4.076 s",
+            "Item 005 · 4000 × 3000 · 3.759 s",
+            "Item 006 · 4000 × 3000 · 3.573 s",
+            "Item 007 · 4000 × 3000 · 3.565 s",
+            "Item 008 · 4000 × 3000 · 3.575 s",
+            "Item 009 · 4000 × 3000 · 3.565 s",
+            "Item 010 · 4000 × 3000 · 3.519 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 164.30000001192093,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 2442708,
+              "total": 3491908
+            }
+          },
+          "zipBytes": 330745960
+        }
+      ],
+      "nativeCanvasPNG": {
+        "color": 6,
+        "depth": 8,
+        "chunks": [
+          "IHDR",
+          "IDAT",
+          "IDAT",
+          "IEND"
+        ]
+      },
+      "orientationProbe": [
+        {
+          "orientation": 1,
+          "width": 125,
+          "height": 75
+        },
+        {
+          "orientation": 2,
+          "width": 125,
+          "height": 75
+        },
+        {
+          "orientation": 3,
+          "width": 125,
+          "height": 75
+        },
+        {
+          "orientation": 4,
+          "width": 125,
+          "height": 75
+        },
+        {
+          "orientation": 5,
+          "width": 75,
+          "height": 125
+        },
+        {
+          "orientation": 6,
+          "width": 75,
+          "height": 125
+        },
+        {
+          "orientation": 7,
+          "width": 75,
+          "height": 125
+        },
+        {
+          "orientation": 8,
+          "width": 75,
+          "height": 125
+        }
+      ],
+      "forcedCanvasFallback": {
+        "max": 0,
+        "mean": 0,
+        "borderMax": 0
+      },
+      "offline": true,
+      "processingNetworkRequests": 0,
+      "networkAPIInvocations": 0,
+      "crashes": 0,
+      "errors": [],
+      "objectURLs": {
+        "functional": {
+          "created": 409,
+          "revoked": 409
+        },
+        "extra": {
+          "created": 133,
+          "revoked": 133
+        },
+        "stress": {
+          "created": 12,
+          "revoked": 12
+        }
+      }
+    },
+    {
+      "name": "Firefox",
+      "version": "142.0.1",
+      "pixelCases": 156,
+      "metrics": {
+        "none": {
+          "max": 0,
+          "meanMaximum": 0,
+          "borderMaximum": 0
+        },
+        "top": {
+          "max": 0,
+          "meanMaximum": 0,
+          "borderMaximum": 0
+        },
+        "bottom": {
+          "max": 0,
+          "meanMaximum": 0,
+          "borderMaximum": 0
+        },
+        "left": {
+          "max": 0,
+          "meanMaximum": 0,
+          "borderMaximum": 0
+        },
+        "right": {
+          "max": 0,
+          "meanMaximum": 0,
+          "borderMaximum": 0
+        },
+        "all": {
+          "max": 0,
+          "meanMaximum": 0,
+          "borderMaximum": 0
+        },
+        "blur": {
+          "max": 0,
+          "meanMaximum": 0,
+          "borderMaximum": 0
+        },
+        "pixel": {
+          "max": 1,
+          "meanMaximum": 0.2532418001525553,
+          "borderMaximum": 1
+        }
+      },
+      "functional": [
+        {
+          "count": 1,
+          "mode": "tarja",
+          "corpus": "1600x1200",
+          "totalMs": 1399,
+          "validationMs": 508,
+          "zipMs": 249,
+          "fullFlowMs": 2320,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 1.342 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 17,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": null
+          },
+          "zipBytes": 5303379
+        },
+        {
+          "count": 5,
+          "mode": "tarja",
+          "corpus": "1600x1200",
+          "totalMs": 7374,
+          "validationMs": 2805,
+          "zipMs": 938,
+          "fullFlowMs": 11271,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 1.402 s",
+            "Item 002 · 1600 × 1200 · 1.371 s",
+            "Item 003 · 1600 × 1200 · 1.704 s",
+            "Item 004 · 1600 × 1200 · 1.340 s",
+            "Item 005 · 1600 × 1200 · 1.472 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 22,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": null
+          },
+          "zipBytes": 26516895
+        },
+        {
+          "count": 10,
+          "mode": "tarja",
+          "corpus": "1600x1200",
+          "totalMs": 13051,
+          "validationMs": 4949,
+          "zipMs": 1725,
+          "fullFlowMs": 20240,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 1.291 s",
+            "Item 002 · 1600 × 1200 · 1.284 s",
+            "Item 003 · 1600 × 1200 · 1.302 s",
+            "Item 004 · 1600 × 1200 · 1.300 s",
+            "Item 005 · 1600 × 1200 · 1.289 s",
+            "Item 006 · 1600 × 1200 · 1.252 s",
+            "Item 007 · 1600 × 1200 · 1.323 s",
+            "Item 008 · 1600 × 1200 · 1.274 s",
+            "Item 009 · 1600 × 1200 · 1.306 s",
+            "Item 010 · 1600 × 1200 · 1.340 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 20,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": null
+          },
+          "zipBytes": 53033790
+        },
+        {
+          "count": 1,
+          "mode": "desfoque",
+          "corpus": "1600x1200",
+          "totalMs": 1755,
+          "validationMs": 609,
+          "zipMs": 277,
+          "fullFlowMs": 2832,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 1.676 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 16,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": null
+          },
+          "zipBytes": 5704031
+        },
+        {
+          "count": 5,
+          "mode": "desfoque",
+          "corpus": "1600x1200",
+          "totalMs": 7994,
+          "validationMs": 2710,
+          "zipMs": 880,
+          "fullFlowMs": 11750,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 1.633 s",
+            "Item 002 · 1600 × 1200 · 1.583 s",
+            "Item 003 · 1600 × 1200 · 1.557 s",
+            "Item 004 · 1600 × 1200 · 1.554 s",
+            "Item 005 · 1600 × 1200 · 1.587 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 18,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": null
+          },
+          "zipBytes": 28520155
+        },
+        {
+          "count": 10,
+          "mode": "desfoque",
+          "corpus": "1600x1200",
+          "totalMs": 15973,
+          "validationMs": 5594,
+          "zipMs": 1690,
+          "fullFlowMs": 23443,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 1.644 s",
+            "Item 002 · 1600 × 1200 · 1.618 s",
+            "Item 003 · 1600 × 1200 · 1.634 s",
+            "Item 004 · 1600 × 1200 · 1.636 s",
+            "Item 005 · 1600 × 1200 · 1.567 s",
+            "Item 006 · 1600 × 1200 · 1.565 s",
+            "Item 007 · 1600 × 1200 · 1.535 s",
+            "Item 008 · 1600 × 1200 · 1.602 s",
+            "Item 009 · 1600 × 1200 · 1.537 s",
+            "Item 010 · 1600 × 1200 · 1.544 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 26,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": null
+          },
+          "zipBytes": 57040310
+        },
+        {
+          "count": 1,
+          "mode": "pixelizacao",
+          "corpus": "1600x1200",
+          "totalMs": 1421,
+          "validationMs": 534,
+          "zipMs": 238,
+          "fullFlowMs": 2349,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 1.352 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 15,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": null
+          },
+          "zipBytes": 5310196
+        },
+        {
+          "count": 5,
+          "mode": "pixelizacao",
+          "corpus": "1600x1200",
+          "totalMs": 6631,
+          "validationMs": 2484,
+          "zipMs": 882,
+          "fullFlowMs": 10146,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 1.301 s",
+            "Item 002 · 1600 × 1200 · 1.325 s",
+            "Item 003 · 1600 × 1200 · 1.309 s",
+            "Item 004 · 1600 × 1200 · 1.312 s",
+            "Item 005 · 1600 × 1200 · 1.319 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 18,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": null
+          },
+          "zipBytes": 26550980
+        },
+        {
+          "count": 10,
+          "mode": "pixelizacao",
+          "corpus": "1600x1200",
+          "totalMs": 14745,
+          "validationMs": 5170,
+          "zipMs": 1731,
+          "fullFlowMs": 21831,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 1.348 s",
+            "Item 002 · 1600 × 1200 · 1.367 s",
+            "Item 003 · 1600 × 1200 · 1.435 s",
+            "Item 004 · 1600 × 1200 · 1.580 s",
+            "Item 005 · 1600 × 1200 · 1.487 s",
+            "Item 006 · 1600 × 1200 · 1.477 s",
+            "Item 007 · 1600 × 1200 · 1.494 s",
+            "Item 008 · 1600 × 1200 · 1.477 s",
+            "Item 009 · 1600 × 1200 · 1.510 s",
+            "Item 010 · 1600 × 1200 · 1.493 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 37,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": null
+          },
+          "zipBytes": 53101960
+        }
+      ],
+      "stress": [
+        {
+          "count": 1,
+          "mode": "tarja",
+          "corpus": "4000x3000",
+          "totalMs": 7423,
+          "validationMs": 3087,
+          "zipMs": 1818,
+          "fullFlowMs": 12524,
+          "perImage": [
+            "Item 001 · 4000 × 3000 · 7.337 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 18,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": null
+          },
+          "zipBytes": 33079742
+        },
+        {
+          "count": 5,
+          "mode": "tarja",
+          "corpus": "4000x3000",
+          "totalMs": 37433,
+          "validationMs": 14679,
+          "zipMs": 9140,
+          "fullFlowMs": 61435,
+          "perImage": [
+            "Item 001 · 4000 × 3000 · 7.596 s",
+            "Item 002 · 4000 × 3000 · 7.669 s",
+            "Item 003 · 4000 × 3000 · 7.274 s",
+            "Item 004 · 4000 × 3000 · 7.399 s",
+            "Item 005 · 4000 × 3000 · 7.412 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 19,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": null
+          },
+          "zipBytes": 165398710
+        },
+        {
+          "count": 10,
+          "mode": "tarja",
+          "corpus": "4000x3000",
+          "totalMs": 75273,
+          "validationMs": 30487,
+          "zipMs": 32586,
+          "fullFlowMs": 138541,
+          "perImage": [
+            "Item 001 · 4000 × 3000 · 7.308 s",
+            "Item 002 · 4000 × 3000 · 7.486 s",
+            "Item 003 · 4000 × 3000 · 7.346 s",
+            "Item 004 · 4000 × 3000 · 7.358 s",
+            "Item 005 · 4000 × 3000 · 7.456 s",
+            "Item 006 · 4000 × 3000 · 7.430 s",
+            "Item 007 · 4000 × 3000 · 7.705 s",
+            "Item 008 · 4000 × 3000 · 7.767 s",
+            "Item 009 · 4000 × 3000 · 7.537 s",
+            "Item 010 · 4000 × 3000 · 7.775 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 291,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": null
+          },
+          "zipBytes": 330797420
+        }
+      ],
+      "nativeCanvasPNG": {
+        "color": 6,
+        "depth": 8,
+        "chunks": [
+          "IHDR",
+          "IDAT",
+          "IEND"
+        ]
+      },
+      "orientationProbe": [
+        {
+          "orientation": 1,
+          "width": 125,
+          "height": 75
+        },
+        {
+          "orientation": 2,
+          "width": 125,
+          "height": 75
+        },
+        {
+          "orientation": 3,
+          "width": 125,
+          "height": 75
+        },
+        {
+          "orientation": 4,
+          "width": 125,
+          "height": 75
+        },
+        {
+          "orientation": 5,
+          "width": 125,
+          "height": 75
+        },
+        {
+          "orientation": 6,
+          "width": 125,
+          "height": 75
+        },
+        {
+          "orientation": 7,
+          "width": 125,
+          "height": 75
+        },
+        {
+          "orientation": 8,
+          "width": 125,
+          "height": 75
+        }
+      ],
+      "forcedCanvasFallback": {
+        "max": 0,
+        "mean": 0,
+        "borderMax": 0
+      },
+      "offline": true,
+      "processingNetworkRequests": 0,
+      "networkAPIInvocations": 0,
+      "crashes": 0,
+      "errors": [],
+      "objectURLs": {
+        "functional": {
+          "created": 409,
+          "revoked": 409
+        },
+        "extra": {
+          "created": 133,
+          "revoked": 133
+        },
+        "stress": {
+          "created": 12,
+          "revoked": 12
+        }
+      }
+    }
+  ],
+  "output": {
+    "format": "PNG",
+    "bitDepth": 8,
+    "colorType": 2,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ],
+    "neutralNames": true,
+    "metadata": "nenhum metadado identificador da entrada foi propagado nos casos testados"
+  },
+  "privacy": {
+    "runtimeAudit": {
+      "results": [
+        {
+          "file": "src/codec.ts",
+          "networkOrPersistentAPI": false
+        },
+        {
+          "file": "src/core.ts",
+          "networkOrPersistentAPI": false
+        },
+        {
+          "file": "src/main.ts",
+          "networkOrPersistentAPI": false
+        },
+        {
+          "file": "src/state.ts",
+          "networkOrPersistentAPI": false
+        },
+        {
+          "file": "src/worker.ts",
+          "networkOrPersistentAPI": false
+        },
+        {
+          "file": "index.html",
+          "networkOrPersistentAPI": false
+        },
+        {
+          "file": "style.css",
+          "networkOrPersistentAPI": false
+        }
+      ],
+      "runtimeDependencies": [],
+      "staticOnly": true,
+      "cspConnectNone": true,
+      "analytics": false,
+      "storage": false
+    },
+    "storageImplemented": false,
+    "analytics": false
+  },
+  "limitations": [
+    "Real Android/iOS and Safari not tested",
+    "Main JS heap is not total process/native/Worker/Blob memory",
+    "12 MP stress uses black mask; extreme blur not approved",
+    "CMYK/YCCK and unusual JPEG are rejected",
+    "No universal corrupted entropy guarantee from native JPEG decoders"
+  ],
+  "createdFiles": [
+    "browser-poc/.gitignore",
+    "browser-poc/README.md",
+    "browser-poc/package.json",
+    "browser-poc/package-lock.json",
+    "browser-poc/tsconfig.json",
+    "browser-poc/index.html",
+    "browser-poc/style.css",
+    "browser-poc/src/codec.ts",
+    "browser-poc/src/core.ts",
+    "browser-poc/src/main.ts",
+    "browser-poc/src/state.ts",
+    "browser-poc/src/worker.ts",
+    "browser-poc/scripts/audit.mjs",
+    "browser-poc/scripts/build.mjs",
+    "browser-poc/scripts/evidence.mjs",
+    "browser-poc/scripts/serve.mjs",
+    "browser-poc/tests/browser.mjs",
+    "browser-poc/tests/core.test.mjs",
+    "browser-poc/tests/fixtures.py",
+    "browser-poc/tests/fixtures_extra.py",
+    "browser-poc/tests/README.md",
+    "browser-poc/tests/requirements-reference.txt",
+    "browser-poc/tests/verify_exports.py",
+    "browser-poc/tests/visual_comparison.py",
+    "docs/anonymizer-client-poc.md",
+    "docs/anonymizer-client-poc-evidence/audit.json",
+    "docs/anonymizer-client-poc-evidence/browser-report.json",
+    "docs/anonymizer-client-poc-evidence/Chrome-desktop.png",
+    "docs/anonymizer-client-poc-evidence/Chrome-mobile-layout.png",
+    "docs/anonymizer-client-poc-evidence/core-metrics.json",
+    "docs/anonymizer-client-poc-evidence/Edge-desktop.png",
+    "docs/anonymizer-client-poc-evidence/Edge-mobile-layout.png",
+    "docs/anonymizer-client-poc-evidence/extra-report.json",
+    "docs/anonymizer-client-poc-evidence/Firefox-desktop.png",
+    "docs/anonymizer-client-poc-evidence/Firefox-mobile-layout.png",
+    "docs/anonymizer-client-poc-evidence/functional-export-verification.json",
+    "docs/anonymizer-client-poc-evidence/python-browser-comparison.png",
+    "docs/anonymizer-client-poc-evidence/stress-export-verification.json",
+    "docs/anonymizer-client-poc-evidence/stress-report.json",
+    "docs/anonymizer-client-poc-evidence/summary.json"
+  ],
+  "memoryMeasurement": {
+    "totalProcessMeasured": false,
+    "mainHeapUsedMaximumBytes": 5160518,
+    "maxFunctionalSchedulingLagMs": 64,
+    "maxStressSchedulingLagMs": 343.79999999701977
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "results": [
+    {
+      "file": "src/codec.ts",
+      "networkOrPersistentAPI": false
+    },
+    {
+      "file": "src/core.ts",
+      "networkOrPersistentAPI": false
+    },
+    {
+      "file": "src/main.ts",
+      "networkOrPersistentAPI": false
+    },
+    {
+      "file": "src/state.ts",
+      "networkOrPersistentAPI": false
+    },
+    {
+      "file": "src/worker.ts",
+      "networkOrPersistentAPI": false
+    },
+    {
+      "file": "index.html",
+      "networkOrPersistentAPI": false
+    },
+    {
+      "file": "style.css",
+      "networkOrPersistentAPI": false
+    }
+  ],
+  "runtimeDependencies": [],
+  "staticOnly": true,
+  "cspConnectNone": true,
+  "analytics": false,
+  "storage": false
+}
