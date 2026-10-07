@@ -9,12 +9,15 @@ const fixture=path.resolve('tests/generated/fixtures'),manifest=JSON.parse(await
 const stress=process.argv.includes('--stress'),single=process.env.POC_BROWSER;
 process.env.PLAYWRIGHT_BROWSERS_PATH=path.resolve('tests/generated/browsers');
 const {chromium,firefox}=await import('playwright');
+const hardening=process.argv.includes('--hardening');
+const hard=JSON.parse(await readFile(path.join(fixture,'manifest-hardening.json')));
 const extras=process.argv.includes('--extras');
 if(extras){const extra=JSON.parse(await readFile(path.join(fixture,'manifest-extra.json')));manifest.cases=extra.cases;manifest.invalid=extra.invalid;}
+if(hardening){manifest.cases=hard.cases;manifest.invalid=hard.rejected;}
 await mkdir('tests/artifacts',{recursive:true});
 const server=spawn(process.execPath,['scripts/serve.mjs'],{stdio:['ignore','pipe','pipe']});
 await new Promise((resolve,reject)=>{server.stdout.once('data',resolve);server.once('error',reject);server.once('exit',code=>{if(code)reject(new Error('Static server failed: '+code));});});
-const report={started:new Date().toISOString(),stress,extras,browsers:[],tolerance:{pngMax:0,blurMax:2,pixelMax:2,mean:.5,jpegDecodeMax:3,jpegDecodeMean:.5,jpegPipelineMax:5,jpegPipelineMean:.7}};
+const report={started:new Date().toISOString(),stress,extras,hardening,browsers:[],tolerance:{pngMax:0,blurMax:2,pixelMax:2,mean:.5,jpegDecodeMax:3,jpegDecodeMean:.5,jpegPipelineMax:5,jpegPipelineMean:.7}};
 function privacyGuard(){
   globalThis.__privacy=[];
   const block=kind=>function(...args){globalThis.__privacy.push(kind);throw new Error('Network call blocked by privacy test: '+kind);};
@@ -139,7 +142,7 @@ try{
         await page.locator('#review').check();const survivors=await downloadZIP(page,choice.name+'-isolated');assert.equal(survivors.length,1);assert.equal(survivors[0].name,'imagem_anonimizada_002.png');
       }
       const perfFile=stress?'stress.png':'functional.png';
-      for(const mode of extras?[]:stress?['tarja']:['tarja','desfoque','pixelizacao']){
+      for(const mode of (extras||hardening)?[]:stress?['tarja']:['tarja','desfoque','pixelizacao']){
         for(const count of [1,5,10]){
           const flowStart=Date.now();await select(page,Array(count).fill(perfFile));const validationMs=Date.now()-flowStart;
           await configure(page,{mode:({'tarja':'Tarja preta','desfoque':'Desfoque','pixelizacao':'Pixelização'})[mode],top_percent:4,bottom_percent:4,left_percent:0,right_percent:0});
@@ -179,6 +182,61 @@ try{
         br.canvasFallback=diff(p.rgb,reference,p.width,p.height);assert.ok(br.canvasFallback.max<=3&&br.canvasFallback.mean<=.5);
         await worker.evaluate(()=>{globalThis.OffscreenCanvas=globalThis.__offscreen;});
       }
+      if(hardening){
+        br.jpegNative=[];
+        for(const c of hard.rejected){
+          const bytes=await readFile(path.join(fixture,c.name));
+          const result=await page.evaluate(async bytes=>{
+            let bitmap,canvas;
+            try{bitmap=await createImageBitmap(new Blob([new Uint8Array(bytes)],{type:'image/jpeg'}));canvas=document.createElement('canvas');canvas.width=bitmap.width;canvas.height=bitmap.height;
+              const ctx=canvas.getContext('2d');ctx.drawImage(bitmap,0,0);const rgba=ctx.getImageData(0,0,canvas.width,canvas.height).data,rgb=[];
+              for(let i=0;i<rgba.length;i+=4)rgb.push(rgba[i],rgba[i+1],rgba[i+2]);return {decoded:true,width:canvas.width,height:canvas.height,rgb};
+            }catch{return {decoded:false};}finally{bitmap?.close();if(canvas)canvas.width=canvas.height=1;}
+          },[...bytes]);
+          const comparison=result.decoded?diff(result.rgb,await readFile(path.join(fixture,c.raw)),c.width,c.height):null;
+          br.jpegNative.push({variant:c.name,decoded:result.decoded,comparison});
+          await select(page,[c.name]);assert.equal(await page.locator('#process').isDisabled(),true);
+          assert.match(await page.locator('#errors').textContent(),/Item 001:.*JPEG RGB/);
+        }
+        const instrument=()=>{
+          globalThis.__bitmaps={created:0,closed:0};const native=createImageBitmap;
+          globalThis.createImageBitmap=async(...args)=>{const bitmap=await native(...args);globalThis.__bitmaps.created++;const close=bitmap.close.bind(bitmap);
+            bitmap.close=()=>{globalThis.__bitmaps.closed++;close();};return bitmap;};
+        };
+        await page.evaluate(instrument);await worker.evaluate(instrument);
+        const modes=['absent','context','decoder'];br.fallback=[];
+        for(const kind of modes){
+          await worker.evaluate(kind=>{
+            globalThis.__saved={canvas:OffscreenCanvas,bitmap:createImageBitmap};
+            if(kind==='absent')globalThis.OffscreenCanvas=undefined;
+            if(kind==='context')globalThis.OffscreenCanvas=class{constructor(){throw Error('native secret path');}};
+            if(kind==='decoder')globalThis.createImageBitmap=async()=>{throw Error('native secret filename');};
+          },kind);
+          await select(page,['direct-rgb.jpg']);await configure(page,{mode:'Tarja preta',top_percent:0,bottom_percent:0,left_percent:0,right_percent:0});
+          await processBatch(page);assert.equal(await page.locator('details').count(),1);await page.locator('#review').check();
+          const [entry]=await downloadZIP(page,choice.name+'-hardening-fallback-'+kind);
+          const pixels=await decodePNG(entry.bytes),reference=await readFile(path.join(fixture,'direct-rgb.rgb'));
+          const metrics=diff(pixels.rgb,reference,pixels.width,pixels.height);assert.ok(metrics.max<=3&&metrics.mean<=.5);br.fallback.push({kind,...metrics});
+          await worker.evaluate(()=>{globalThis.OffscreenCanvas=globalThis.__saved.canvas;globalThis.createImageBitmap=globalThis.__saved.bitmap;delete globalThis.__saved;});
+        }
+        // Both paths fail: errors must remain neutral, and the next valid batch must work.
+        await worker.evaluate(()=>{globalThis.__savedBitmap=createImageBitmap;globalThis.createImageBitmap=async()=>{throw Error('JPEG PATIENT_SECRET C:/path/secret.jpg');};});
+        await page.evaluate(()=>{globalThis.__savedBitmap=createImageBitmap;globalThis.createImageBitmap=async()=>{throw Error('JPEG PATIENT_SECRET C:/path/secret.jpg');};});
+        await select(page,['gray-jpeg.jpg']);assert.equal(await page.locator('#process').isDisabled(),true);
+        assert.match(await page.locator('#errors').textContent(),/Item 001:/);assert.doesNotMatch(await page.locator('body').textContent(),/PATIENT_SECRET|secret.jpg|C:\/path/);
+        await worker.evaluate(()=>{globalThis.createImageBitmap=globalThis.__savedBitmap;});await page.evaluate(()=>{globalThis.createImageBitmap=globalThis.__savedBitmap;});
+        br.repeat=[];
+        for(let cycle=0;cycle<6;cycle++){
+          await select(page,[...Array(5).fill('gray-jpeg.jpg'),...Array(5).fill('rgb.png')]);
+          await processBatch(page);assert.equal(await page.locator('details').count(),10);await page.locator('#review').check();
+          assert.equal((await downloadZIP(page,choice.name+'-hardening-repeat-'+cycle)).length,10);
+          await page.locator('#clear').click();await waitIdle(page);
+          const urls=await page.evaluate(()=>globalThis.__urlStats);assert.equal(urls.created,urls.revoked);
+          assert.equal(await page.locator('details').count(),0);assert.equal(await page.locator('#download').isDisabled(),true);br.repeat.push({cycle,urls});
+        }
+        br.bitmaps={page:await page.evaluate(()=>globalThis.__bitmaps),worker:await worker.evaluate(()=>globalThis.__bitmaps)};
+        for(const counters of Object.values(br.bitmaps))assert.equal(counters.created,counters.closed);
+      }
       await select(page,['PACIENTE-TESTE-PRIVACIDADE-7F2A9C.png']);await processBatch(page);await page.locator('#review').check();await downloadZIP(page,choice.name+'-privacy');
       await page.screenshot({path:'tests/artifacts/'+choice.name+(stress?'-stress':'')+'-desktop.png',fullPage:true});
       await page.setViewportSize({width:390,height:844});await page.screenshot({path:'tests/artifacts/'+choice.name+(stress?'-stress':'')+'-mobile-layout.png',fullPage:true});
@@ -190,12 +248,13 @@ try{
       br.urls=audit.urls;assert.equal(audit.urls.created,audit.urls.revoked);
       assert.deepEqual(br.privacy.pageCalls,[]);assert.deepEqual(br.privacy.workerCalls,[]);assert.deepEqual(br.privacy.unexpectedRequests,[]);
       assert.deepEqual(br.errors,[]);assert.equal(br.crashes,0);br.offline=true;
+      if(hardening){await page.evaluate(()=>window.dispatchEvent(new PageTransitionEvent('pagehide')));assert.equal(await page.locator('details').count(),0);assert.equal(await page.locator('#download').isDisabled(),true);br.pagehide=true;}
       await context.close();
     }finally{await browser.close();}
   }
 }catch(e){failure=e;report.failure=String(e.stack);}
 finally{
-  await writeFile('tests/artifacts/'+(stress?'stress-report':extras?'extra-report':'browser-report')+(single?'-'+single:'')+'.json',JSON.stringify(report,null,2));server.kill();
+  await writeFile('tests/artifacts/'+(stress?'stress-report':extras?'extra-report':hardening?'hardening-report':'browser-report')+(single?'-'+single:'')+'.json',JSON.stringify(report,null,2));server.kill();
 }
 if(failure)throw failure;
 console.log('Browser gates passed: '+report.browsers.map(b=>b.name+' '+b.version).join(', '));

@@ -21,3 +21,6 @@ Limites da POC: 10 arquivos, 64 MiB por arquivo, 12 MP, lado máximo 8192; JPEG 
 
 Documentação e resultados: [relatório técnico](../docs/anonymizer-client-poc.md).
 Reprodução dos testes: [tests/README.md](tests/README.md).
+
+
+Hardening local da PoC: [decisões, evidências e checklists](../docs/anonymizer-client-hardening.md) · [API reutilizável](src/README.md).

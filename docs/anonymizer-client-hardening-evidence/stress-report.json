@@ -1,0 +1,324 @@
+{
+  "started": "2026-10-07T17:22:59.439Z",
+  "stress": true,
+  "extras": false,
+  "hardening": false,
+  "browsers": [
+    {
+      "name": "Chrome",
+      "version": "155.0.8059.40",
+      "cases": [],
+      "performance": [
+        {
+          "count": 1,
+          "mode": "tarja",
+          "corpus": "4000x3000",
+          "totalMs": 3549,
+          "validationMs": 801,
+          "zipMs": 1501,
+          "fullFlowMs": 6132,
+          "perImage": [
+            "Item 001 · 4000 × 3000 · 3.493 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 160.30000001192093,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 2559470,
+              "total": 5067766
+            }
+          },
+          "zipBytes": 33074596
+        },
+        {
+          "count": 5,
+          "mode": "tarja",
+          "corpus": "4000x3000",
+          "totalMs": 17477,
+          "validationMs": 3701,
+          "zipMs": 5722,
+          "fullFlowMs": 27388,
+          "perImage": [
+            "Item 001 · 4000 × 3000 · 3.488 s",
+            "Item 002 · 4000 × 3000 · 3.604 s",
+            "Item 003 · 4000 × 3000 · 3.401 s",
+            "Item 004 · 4000 × 3000 · 3.446 s",
+            "Item 005 · 4000 × 3000 · 3.411 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 324.2000000178814,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 2593425,
+              "total": 4543669
+            }
+          },
+          "zipBytes": 165372980
+        },
+        {
+          "count": 10,
+          "mode": "tarja",
+          "corpus": "4000x3000",
+          "totalMs": 34049,
+          "validationMs": 7113,
+          "zipMs": 14310,
+          "fullFlowMs": 55808,
+          "perImage": [
+            "Item 001 · 4000 × 3000 · 3.338 s",
+            "Item 002 · 4000 × 3000 · 3.377 s",
+            "Item 003 · 4000 × 3000 · 3.354 s",
+            "Item 004 · 4000 × 3000 · 3.357 s",
+            "Item 005 · 4000 × 3000 · 3.379 s",
+            "Item 006 · 4000 × 3000 · 3.538 s",
+            "Item 007 · 4000 × 3000 · 3.462 s",
+            "Item 008 · 4000 × 3000 · 3.368 s",
+            "Item 009 · 4000 × 3000 · 3.339 s",
+            "Item 010 · 4000 × 3000 · 3.326 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 142.59999999403954,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 2500381,
+              "total": 3232577
+            }
+          },
+          "zipBytes": 330745960
+        }
+      ],
+      "privacy": {
+        "unexpectedRequests": [],
+        "pageCalls": [],
+        "workerCalls": []
+      },
+      "offline": true,
+      "errors": [],
+      "crashes": 0,
+      "mobileOverflow": false,
+      "urls": {
+        "created": 12,
+        "revoked": 12
+      }
+    },
+    {
+      "name": "Edge",
+      "version": "154.0.4258.62",
+      "cases": [],
+      "performance": [
+        {
+          "count": 1,
+          "mode": "tarja",
+          "corpus": "4000x3000",
+          "totalMs": 3777,
+          "validationMs": 812,
+          "zipMs": 1511,
+          "fullFlowMs": 6336,
+          "perImage": [
+            "Item 001 · 4000 × 3000 · 3.707 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 133.80000001192093,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 2727398,
+              "total": 5067766
+            }
+          },
+          "zipBytes": 33074596
+        },
+        {
+          "count": 5,
+          "mode": "tarja",
+          "corpus": "4000x3000",
+          "totalMs": 18410,
+          "validationMs": 3626,
+          "zipMs": 5984,
+          "fullFlowMs": 28475,
+          "perImage": [
+            "Item 001 · 4000 × 3000 · 3.756 s",
+            "Item 002 · 4000 × 3000 · 3.630 s",
+            "Item 003 · 4000 × 3000 · 3.634 s",
+            "Item 004 · 4000 × 3000 · 3.611 s",
+            "Item 005 · 4000 × 3000 · 3.652 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 373.30000001192093,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 2614341,
+              "total": 4543669
+            }
+          },
+          "zipBytes": 165372980
+        },
+        {
+          "count": 10,
+          "mode": "tarja",
+          "corpus": "4000x3000",
+          "totalMs": 36400,
+          "validationMs": 7249,
+          "zipMs": 13127,
+          "fullFlowMs": 57096,
+          "perImage": [
+            "Item 001 · 4000 × 3000 · 3.630 s",
+            "Item 002 · 4000 × 3000 · 3.664 s",
+            "Item 003 · 4000 × 3000 · 3.624 s",
+            "Item 004 · 4000 × 3000 · 3.619 s",
+            "Item 005 · 4000 × 3000 · 3.659 s",
+            "Item 006 · 4000 × 3000 · 3.614 s",
+            "Item 007 · 4000 × 3000 · 3.659 s",
+            "Item 008 · 4000 × 3000 · 3.641 s",
+            "Item 009 · 4000 × 3000 · 3.502 s",
+            "Item 010 · 4000 × 3000 · 3.654 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 165.90000000596046,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 2503453,
+              "total": 3494721
+            }
+          },
+          "zipBytes": 330745960
+        }
+      ],
+      "privacy": {
+        "unexpectedRequests": [],
+        "pageCalls": [],
+        "workerCalls": []
+      },
+      "offline": true,
+      "errors": [],
+      "crashes": 0,
+      "mobileOverflow": false,
+      "urls": {
+        "created": 12,
+        "revoked": 12
+      }
+    },
+    {
+      "name": "Firefox",
+      "version": "142.0.1",
+      "cases": [],
+      "performance": [
+        {
+          "count": 1,
+          "mode": "tarja",
+          "corpus": "4000x3000",
+          "totalMs": 7361,
+          "validationMs": 3051,
+          "zipMs": 1775,
+          "fullFlowMs": 12352,
+          "perImage": [
+            "Item 001 · 4000 × 3000 · 7.283 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 19,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": null
+          },
+          "zipBytes": 33079742
+        },
+        {
+          "count": 5,
+          "mode": "tarja",
+          "corpus": "4000x3000",
+          "totalMs": 36620,
+          "validationMs": 14365,
+          "zipMs": 9502,
+          "fullFlowMs": 60675,
+          "perImage": [
+            "Item 001 · 4000 × 3000 · 7.231 s",
+            "Item 002 · 4000 × 3000 · 7.380 s",
+            "Item 003 · 4000 × 3000 · 7.254 s",
+            "Item 004 · 4000 × 3000 · 7.359 s",
+            "Item 005 · 4000 × 3000 · 7.302 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 18,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": null
+          },
+          "zipBytes": 165398710
+        },
+        {
+          "count": 10,
+          "mode": "tarja",
+          "corpus": "4000x3000",
+          "totalMs": 73469,
+          "validationMs": 28538,
+          "zipMs": 18754,
+          "fullFlowMs": 120958,
+          "perImage": [
+            "Item 001 · 4000 × 3000 · 7.236 s",
+            "Item 002 · 4000 × 3000 · 7.362 s",
+            "Item 003 · 4000 × 3000 · 7.278 s",
+            "Item 004 · 4000 × 3000 · 7.313 s",
+            "Item 005 · 4000 × 3000 · 7.288 s",
+            "Item 006 · 4000 × 3000 · 7.409 s",
+            "Item 007 · 4000 × 3000 · 7.546 s",
+            "Item 008 · 4000 × 3000 · 7.316 s",
+            "Item 009 · 4000 × 3000 · 7.325 s",
+            "Item 010 · 4000 × 3000 · 7.296 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 18,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": null
+          },
+          "zipBytes": 330797420
+        }
+      ],
+      "privacy": {
+        "unexpectedRequests": [],
+        "pageCalls": [],
+        "workerCalls": []
+      },
+      "offline": true,
+      "errors": [],
+      "crashes": 0,
+      "mobileOverflow": false,
+      "urls": {
+        "created": 12,
+        "revoked": 12
+      }
+    }
+  ],
+  "tolerance": {
+    "pngMax": 0,
+    "blurMax": 2,
+    "pixelMax": 2,
+    "mean": 0.5,
+    "jpegDecodeMax": 3,
+    "jpegDecodeMean": 0.5,
+    "jpegPipelineMax": 5,
+    "jpegPipelineMean": 0.7
+  }
+}

@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc --noEmit && node scripts/build.mjs",
     "start": "node scripts/serve.mjs",
-    "test": "node --test tests/core.test.mjs",
+    "test": "node --test tests/core.test.mjs tests/hardening.test.mjs",
     "test:browser": "node tests/browser.mjs",
     "test:stress": "node tests/browser.mjs --stress"
   },

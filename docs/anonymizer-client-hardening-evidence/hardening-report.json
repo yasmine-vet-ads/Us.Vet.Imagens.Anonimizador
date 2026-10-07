@@ -1,0 +1,699 @@
+{
+  "started": "2026-10-07T17:13:06.499Z",
+  "stress": false,
+  "extras": false,
+  "hardening": true,
+  "browsers": [
+    {
+      "name": "Chrome",
+      "version": "155.0.8059.40",
+      "cases": [
+        {
+          "file": "gray-jpeg.jpg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray-jpeg.jpg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray-jpeg.jpg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray-jpeg.jpg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.0528,
+          "borderMax": 1
+        },
+        {
+          "file": "gray-progressive.jpg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray-progressive.jpg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray-progressive.jpg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray-progressive.jpg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.0528,
+          "borderMax": 1
+        },
+        {
+          "file": "direct-rgb.jpg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "direct-rgb.jpg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "direct-rgb.jpg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "direct-rgb.jpg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.09152,
+          "borderMax": 1
+        },
+        {
+          "file": "extended-sequential.jpg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "extended-sequential.jpg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "extended-sequential.jpg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "extended-sequential.jpg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        }
+      ],
+      "performance": [],
+      "privacy": {
+        "unexpectedRequests": [],
+        "pageCalls": [],
+        "workerCalls": []
+      },
+      "offline": true,
+      "errors": [],
+      "crashes": 0,
+      "jpegNative": [
+        {
+          "variant": "cmyk.jpg",
+          "decoded": true,
+          "comparison": {
+            "max": 0,
+            "mean": 0,
+            "borderMax": 0
+          }
+        },
+        {
+          "variant": "ycck.jpg",
+          "decoded": true,
+          "comparison": {
+            "max": 1,
+            "mean": 1,
+            "borderMax": 1
+          }
+        }
+      ],
+      "fallback": [
+        {
+          "kind": "absent",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "kind": "context",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "kind": "decoder",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        }
+      ],
+      "repeat": [
+        {
+          "cycle": 0,
+          "urls": {
+            "created": 79,
+            "revoked": 79
+          }
+        },
+        {
+          "cycle": 1,
+          "urls": {
+            "created": 82,
+            "revoked": 82
+          }
+        },
+        {
+          "cycle": 2,
+          "urls": {
+            "created": 85,
+            "revoked": 85
+          }
+        },
+        {
+          "cycle": 3,
+          "urls": {
+            "created": 88,
+            "revoked": 88
+          }
+        },
+        {
+          "cycle": 4,
+          "urls": {
+            "created": 91,
+            "revoked": 91
+          }
+        },
+        {
+          "cycle": 5,
+          "urls": {
+            "created": 94,
+            "revoked": 94
+          }
+        }
+      ],
+      "bitmaps": {
+        "page": {
+          "created": 6,
+          "closed": 6
+        },
+        "worker": {
+          "created": 62,
+          "closed": 62
+        }
+      },
+      "mobileOverflow": false,
+      "urls": {
+        "created": 97,
+        "revoked": 97
+      },
+      "pagehide": true
+    },
+    {
+      "name": "Edge",
+      "version": "154.0.4258.62",
+      "cases": [
+        {
+          "file": "gray-jpeg.jpg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray-jpeg.jpg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray-jpeg.jpg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray-jpeg.jpg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.0528,
+          "borderMax": 1
+        },
+        {
+          "file": "gray-progressive.jpg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray-progressive.jpg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray-progressive.jpg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray-progressive.jpg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.0528,
+          "borderMax": 1
+        },
+        {
+          "file": "direct-rgb.jpg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "direct-rgb.jpg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "direct-rgb.jpg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "direct-rgb.jpg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.09152,
+          "borderMax": 1
+        },
+        {
+          "file": "extended-sequential.jpg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "extended-sequential.jpg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "extended-sequential.jpg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "extended-sequential.jpg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        }
+      ],
+      "performance": [],
+      "privacy": {
+        "unexpectedRequests": [],
+        "pageCalls": [],
+        "workerCalls": []
+      },
+      "offline": true,
+      "errors": [],
+      "crashes": 0,
+      "jpegNative": [
+        {
+          "variant": "cmyk.jpg",
+          "decoded": true,
+          "comparison": {
+            "max": 0,
+            "mean": 0,
+            "borderMax": 0
+          }
+        },
+        {
+          "variant": "ycck.jpg",
+          "decoded": true,
+          "comparison": {
+            "max": 1,
+            "mean": 1,
+            "borderMax": 1
+          }
+        }
+      ],
+      "fallback": [
+        {
+          "kind": "absent",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "kind": "context",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "kind": "decoder",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        }
+      ],
+      "repeat": [
+        {
+          "cycle": 0,
+          "urls": {
+            "created": 79,
+            "revoked": 79
+          }
+        },
+        {
+          "cycle": 1,
+          "urls": {
+            "created": 82,
+            "revoked": 82
+          }
+        },
+        {
+          "cycle": 2,
+          "urls": {
+            "created": 85,
+            "revoked": 85
+          }
+        },
+        {
+          "cycle": 3,
+          "urls": {
+            "created": 88,
+            "revoked": 88
+          }
+        },
+        {
+          "cycle": 4,
+          "urls": {
+            "created": 91,
+            "revoked": 91
+          }
+        },
+        {
+          "cycle": 5,
+          "urls": {
+            "created": 94,
+            "revoked": 94
+          }
+        }
+      ],
+      "bitmaps": {
+        "page": {
+          "created": 6,
+          "closed": 6
+        },
+        "worker": {
+          "created": 62,
+          "closed": 62
+        }
+      },
+      "mobileOverflow": false,
+      "urls": {
+        "created": 97,
+        "revoked": 97
+      },
+      "pagehide": true
+    },
+    {
+      "name": "Firefox",
+      "version": "142.0.1",
+      "cases": [
+        {
+          "file": "gray-jpeg.jpg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray-jpeg.jpg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray-jpeg.jpg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray-jpeg.jpg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.0528,
+          "borderMax": 1
+        },
+        {
+          "file": "gray-progressive.jpg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray-progressive.jpg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray-progressive.jpg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray-progressive.jpg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.0528,
+          "borderMax": 1
+        },
+        {
+          "file": "direct-rgb.jpg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "direct-rgb.jpg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "direct-rgb.jpg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "direct-rgb.jpg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.09152,
+          "borderMax": 1
+        },
+        {
+          "file": "extended-sequential.jpg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "extended-sequential.jpg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "extended-sequential.jpg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "extended-sequential.jpg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        }
+      ],
+      "performance": [],
+      "privacy": {
+        "unexpectedRequests": [],
+        "pageCalls": [],
+        "workerCalls": []
+      },
+      "offline": true,
+      "errors": [],
+      "crashes": 0,
+      "jpegNative": [
+        {
+          "variant": "cmyk.jpg",
+          "decoded": true,
+          "comparison": {
+            "max": 0,
+            "mean": 0,
+            "borderMax": 0
+          }
+        },
+        {
+          "variant": "ycck.jpg",
+          "decoded": true,
+          "comparison": {
+            "max": 1,
+            "mean": 1,
+            "borderMax": 1
+          }
+        }
+      ],
+      "fallback": [
+        {
+          "kind": "absent",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "kind": "context",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "kind": "decoder",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        }
+      ],
+      "repeat": [
+        {
+          "cycle": 0,
+          "urls": {
+            "created": 79,
+            "revoked": 79
+          }
+        },
+        {
+          "cycle": 1,
+          "urls": {
+            "created": 82,
+            "revoked": 82
+          }
+        },
+        {
+          "cycle": 2,
+          "urls": {
+            "created": 85,
+            "revoked": 85
+          }
+        },
+        {
+          "cycle": 3,
+          "urls": {
+            "created": 88,
+            "revoked": 88
+          }
+        },
+        {
+          "cycle": 4,
+          "urls": {
+            "created": 91,
+            "revoked": 91
+          }
+        },
+        {
+          "cycle": 5,
+          "urls": {
+            "created": 94,
+            "revoked": 94
+          }
+        }
+      ],
+      "bitmaps": {
+        "page": {
+          "created": 6,
+          "closed": 6
+        },
+        "worker": {
+          "created": 62,
+          "closed": 62
+        }
+      },
+      "mobileOverflow": false,
+      "urls": {
+        "created": 97,
+        "revoked": 97
+      },
+      "pagehide": true
+    }
+  ],
+  "tolerance": {
+    "pngMax": 0,
+    "blurMax": 2,
+    "pixelMax": 2,
+    "mean": 0.5,
+    "jpegDecodeMax": 3,
+    "jpegDecodeMean": 0.5,
+    "jpegPipelineMax": 5,
+    "jpegPipelineMean": 0.7
+  }
+}

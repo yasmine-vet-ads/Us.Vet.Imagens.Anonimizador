@@ -1,0 +1,490 @@
+{
+  "cases": [
+    {
+      "browser": "Chrome",
+      "version": "155.0.8059.40",
+      "missing": "Worker",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Chrome",
+      "version": "155.0.8059.40",
+      "missing": "Worker-constructor",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Chrome",
+      "version": "155.0.8059.40",
+      "missing": "File",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Chrome",
+      "version": "155.0.8059.40",
+      "missing": "FileReader",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Chrome",
+      "version": "155.0.8059.40",
+      "missing": "Blob",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Chrome",
+      "version": "155.0.8059.40",
+      "missing": "ArrayBuffer",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Chrome",
+      "version": "155.0.8059.40",
+      "missing": "TextEncoder",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Chrome",
+      "version": "155.0.8059.40",
+      "missing": "TextDecoder",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Chrome",
+      "version": "155.0.8059.40",
+      "missing": "CompressionStream",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Chrome",
+      "version": "155.0.8059.40",
+      "missing": "DecompressionStream",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Chrome",
+      "version": "155.0.8059.40",
+      "missing": "createImageBitmap",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Chrome",
+      "version": "155.0.8059.40",
+      "missing": "ImageBitmap.close",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Chrome",
+      "version": "155.0.8059.40",
+      "missing": "URL.createObjectURL",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Chrome",
+      "version": "155.0.8059.40",
+      "missing": "URL.revokeObjectURL",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Chrome",
+      "version": "155.0.8059.40",
+      "missing": "Worker-DecompressionStream",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Chrome",
+      "version": "155.0.8059.40",
+      "missing": "Worker-createImageBitmap",
+      "result": "DOM fallback + offline ZIP",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Chrome",
+      "version": "155.0.8059.40",
+      "missing": "Worker-runtime-error",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Chrome",
+      "version": "155.0.8059.40",
+      "missing": "Worker-request-timeout",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Edge",
+      "version": "154.0.4258.62",
+      "missing": "Worker",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Edge",
+      "version": "154.0.4258.62",
+      "missing": "Worker-constructor",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Edge",
+      "version": "154.0.4258.62",
+      "missing": "File",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Edge",
+      "version": "154.0.4258.62",
+      "missing": "FileReader",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Edge",
+      "version": "154.0.4258.62",
+      "missing": "Blob",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Edge",
+      "version": "154.0.4258.62",
+      "missing": "ArrayBuffer",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Edge",
+      "version": "154.0.4258.62",
+      "missing": "TextEncoder",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Edge",
+      "version": "154.0.4258.62",
+      "missing": "TextDecoder",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Edge",
+      "version": "154.0.4258.62",
+      "missing": "CompressionStream",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Edge",
+      "version": "154.0.4258.62",
+      "missing": "DecompressionStream",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Edge",
+      "version": "154.0.4258.62",
+      "missing": "createImageBitmap",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Edge",
+      "version": "154.0.4258.62",
+      "missing": "ImageBitmap.close",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Edge",
+      "version": "154.0.4258.62",
+      "missing": "URL.createObjectURL",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Edge",
+      "version": "154.0.4258.62",
+      "missing": "URL.revokeObjectURL",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Edge",
+      "version": "154.0.4258.62",
+      "missing": "Worker-DecompressionStream",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Edge",
+      "version": "154.0.4258.62",
+      "missing": "Worker-createImageBitmap",
+      "result": "DOM fallback + offline ZIP",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Edge",
+      "version": "154.0.4258.62",
+      "missing": "Worker-runtime-error",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Edge",
+      "version": "154.0.4258.62",
+      "missing": "Worker-request-timeout",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Firefox",
+      "version": "142.0.1",
+      "missing": "Worker",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Firefox",
+      "version": "142.0.1",
+      "missing": "Worker-constructor",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Firefox",
+      "version": "142.0.1",
+      "missing": "File",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Firefox",
+      "version": "142.0.1",
+      "missing": "FileReader",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Firefox",
+      "version": "142.0.1",
+      "missing": "Blob",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Firefox",
+      "version": "142.0.1",
+      "missing": "ArrayBuffer",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Firefox",
+      "version": "142.0.1",
+      "missing": "TextEncoder",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Firefox",
+      "version": "142.0.1",
+      "missing": "TextDecoder",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Firefox",
+      "version": "142.0.1",
+      "missing": "CompressionStream",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Firefox",
+      "version": "142.0.1",
+      "missing": "DecompressionStream",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Firefox",
+      "version": "142.0.1",
+      "missing": "createImageBitmap",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Firefox",
+      "version": "142.0.1",
+      "missing": "ImageBitmap.close",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Firefox",
+      "version": "142.0.1",
+      "missing": "URL.createObjectURL",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Firefox",
+      "version": "142.0.1",
+      "missing": "URL.revokeObjectURL",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Firefox",
+      "version": "142.0.1",
+      "missing": "Worker-DecompressionStream",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Firefox",
+      "version": "142.0.1",
+      "missing": "Worker-createImageBitmap",
+      "result": "DOM fallback + offline ZIP",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Firefox",
+      "version": "142.0.1",
+      "missing": "Worker-runtime-error",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    },
+    {
+      "browser": "Firefox",
+      "version": "142.0.1",
+      "missing": "Worker-request-timeout",
+      "result": "controlled unsupported",
+      "requests": 0,
+      "calls": 0,
+      "errors": 0
+    }
+  ]
+}

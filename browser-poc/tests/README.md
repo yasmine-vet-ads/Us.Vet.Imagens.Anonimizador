@@ -32,3 +32,21 @@ Browser privacy tests install instrumentation in the page AND Worker for fetch, 
 Timers measure main-thread scheduling delay; Chromium exposes main JS heap only. These do not measure process RSS, image decoder native memory, GPU buffers, all Workers, or Blob backing stores. Mobile viewport screenshots are layout tests, not Android/iOS memory certification.
 
 Quantitative thresholds set before GO: normalized PNG/black masks exact; PNG blur/pixel max <=2, mean <=0.5; JPEG decoder max <=3, mean <=0.5; combined JPEG decoder + masking pipeline max <=5, mean <=0.7. Border error is logged separately. Visual inspection remains required.
+
+
+Hardening additions (same synthetic reference environment):
+
+```powershell
+.\.venv\Scripts\python.exe tests/fixtures_hardening.py
+npm run build
+npm test
+node tests/browser.mjs --hardening
+node tests/capabilities-browser.mjs
+.\.venv\Scripts\python.exe tests/verify_hardening_exports.py
+```
+
+`--hardening` compares grayscale baseline/progressive, direct RGB Adobe transform 0 and extended sequential 8-bit JPEG against Python in all four configurations. It probes native CMYK and genuinely encoded constant-block YCCK outside the runtime, while checking that the MVP rejects both. Marker/precision mutations in unit tests are structural probes, not claimed as valid encoded images. It forces missing OffscreenCanvas, failing Canvas construction and a failing Worker bitmap decoder, plus simultaneous failure of both decode paths; six cycles of ten small images include review, ZIP and clear. Counts of created/closed bitmaps and created/revoked URLs must match. It also checks pagehide invalidation and removal of preview DOM references.
+
+The capability suite removes APIs individually in fresh page contexts and removes decompression or bitmap support before Worker startup. A missing Worker bitmap decoder must use DOM fallback and complete offline download. Other required capabilities must produce a neutral unsupported message before file processing. No Safari approval follows from these desktop gates.
+
+After every gate passes, `node scripts/evidence-hardening.mjs` copies current synthetic reports to a new hardening evidence directory and appends their summary to the hardening document. It preserves the historical PoC evidence. The original Python/Streamlit regression uses the repository environment with `python -m unittest discover -s tests -v` from the repository root.

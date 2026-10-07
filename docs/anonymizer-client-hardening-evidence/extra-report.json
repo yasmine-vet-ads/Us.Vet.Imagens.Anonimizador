@@ -1,0 +1,1004 @@
+{
+  "started": "2026-10-07T17:22:06.911Z",
+  "stress": false,
+  "extras": true,
+  "hardening": false,
+  "browsers": [
+    {
+      "name": "Chrome",
+      "version": "155.0.8059.40",
+      "cases": [
+        {
+          "file": "kernel.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "kernel.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "kernel.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "kernel.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.02061089409722222,
+          "borderMax": 1
+        },
+        {
+          "file": "gray1bit.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray1bit.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray1bit.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray1bit.png",
+          "mode": "pixel",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray2bit.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray2bit.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray2bit.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray2bit.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.2171945701357466,
+          "borderMax": 1
+        },
+        {
+          "file": "gray4bit.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray4bit.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray4bit.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray4bit.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.2171945701357466,
+          "borderMax": 1
+        },
+        {
+          "file": "color216bit.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "color216bit.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "color216bit.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "color216bit.png",
+          "mode": "pixel",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "color416bit.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "color416bit.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "color416bit.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "color416bit.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.10526315789473684,
+          "borderMax": 1
+        },
+        {
+          "file": "color616bit.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "color616bit.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "color616bit.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "color616bit.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.14035087719298245,
+          "borderMax": 1
+        },
+        {
+          "file": "adam7-2.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "adam7-2.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "adam7-2.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "adam7-2.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.2532418001525553,
+          "borderMax": 1
+        },
+        {
+          "file": "adam7-6.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "adam7-6.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "adam7-6.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "adam7-6.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.2532418001525553,
+          "borderMax": 1
+        }
+      ],
+      "performance": [],
+      "privacy": {
+        "unexpectedRequests": [],
+        "pageCalls": [],
+        "workerCalls": []
+      },
+      "offline": true,
+      "errors": [],
+      "crashes": 0,
+      "nativeCanvasPNG": {
+        "color": 6,
+        "depth": 8,
+        "chunks": [
+          "IHDR",
+          "IDAT",
+          "IDAT",
+          "IEND"
+        ]
+      },
+      "orientationProbe": [
+        {
+          "orientation": 1,
+          "width": 125,
+          "height": 75
+        },
+        {
+          "orientation": 2,
+          "width": 125,
+          "height": 75
+        },
+        {
+          "orientation": 3,
+          "width": 125,
+          "height": 75
+        },
+        {
+          "orientation": 4,
+          "width": 125,
+          "height": 75
+        },
+        {
+          "orientation": 5,
+          "width": 75,
+          "height": 125
+        },
+        {
+          "orientation": 6,
+          "width": 75,
+          "height": 125
+        },
+        {
+          "orientation": 7,
+          "width": 75,
+          "height": 125
+        },
+        {
+          "orientation": 8,
+          "width": 75,
+          "height": 125
+        }
+      ],
+      "canvasFallback": {
+        "max": 0,
+        "mean": 0,
+        "borderMax": 0
+      },
+      "mobileOverflow": false,
+      "urls": {
+        "created": 133,
+        "revoked": 133
+      }
+    },
+    {
+      "name": "Edge",
+      "version": "154.0.4258.62",
+      "cases": [
+        {
+          "file": "kernel.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "kernel.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "kernel.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "kernel.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.02061089409722222,
+          "borderMax": 1
+        },
+        {
+          "file": "gray1bit.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray1bit.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray1bit.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray1bit.png",
+          "mode": "pixel",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray2bit.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray2bit.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray2bit.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray2bit.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.2171945701357466,
+          "borderMax": 1
+        },
+        {
+          "file": "gray4bit.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray4bit.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray4bit.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray4bit.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.2171945701357466,
+          "borderMax": 1
+        },
+        {
+          "file": "color216bit.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "color216bit.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "color216bit.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "color216bit.png",
+          "mode": "pixel",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "color416bit.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "color416bit.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "color416bit.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "color416bit.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.10526315789473684,
+          "borderMax": 1
+        },
+        {
+          "file": "color616bit.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "color616bit.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "color616bit.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "color616bit.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.14035087719298245,
+          "borderMax": 1
+        },
+        {
+          "file": "adam7-2.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "adam7-2.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "adam7-2.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "adam7-2.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.2532418001525553,
+          "borderMax": 1
+        },
+        {
+          "file": "adam7-6.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "adam7-6.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "adam7-6.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "adam7-6.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.2532418001525553,
+          "borderMax": 1
+        }
+      ],
+      "performance": [],
+      "privacy": {
+        "unexpectedRequests": [],
+        "pageCalls": [],
+        "workerCalls": []
+      },
+      "offline": true,
+      "errors": [],
+      "crashes": 0,
+      "nativeCanvasPNG": {
+        "color": 6,
+        "depth": 8,
+        "chunks": [
+          "IHDR",
+          "IDAT",
+          "IDAT",
+          "IEND"
+        ]
+      },
+      "orientationProbe": [
+        {
+          "orientation": 1,
+          "width": 125,
+          "height": 75
+        },
+        {
+          "orientation": 2,
+          "width": 125,
+          "height": 75
+        },
+        {
+          "orientation": 3,
+          "width": 125,
+          "height": 75
+        },
+        {
+          "orientation": 4,
+          "width": 125,
+          "height": 75
+        },
+        {
+          "orientation": 5,
+          "width": 75,
+          "height": 125
+        },
+        {
+          "orientation": 6,
+          "width": 75,
+          "height": 125
+        },
+        {
+          "orientation": 7,
+          "width": 75,
+          "height": 125
+        },
+        {
+          "orientation": 8,
+          "width": 75,
+          "height": 125
+        }
+      ],
+      "canvasFallback": {
+        "max": 0,
+        "mean": 0,
+        "borderMax": 0
+      },
+      "mobileOverflow": false,
+      "urls": {
+        "created": 133,
+        "revoked": 133
+      }
+    },
+    {
+      "name": "Firefox",
+      "version": "142.0.1",
+      "cases": [
+        {
+          "file": "kernel.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "kernel.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "kernel.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "kernel.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.02061089409722222,
+          "borderMax": 1
+        },
+        {
+          "file": "gray1bit.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray1bit.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray1bit.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray1bit.png",
+          "mode": "pixel",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray2bit.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray2bit.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray2bit.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray2bit.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.2171945701357466,
+          "borderMax": 1
+        },
+        {
+          "file": "gray4bit.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray4bit.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray4bit.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray4bit.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.2171945701357466,
+          "borderMax": 1
+        },
+        {
+          "file": "color216bit.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "color216bit.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "color216bit.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "color216bit.png",
+          "mode": "pixel",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "color416bit.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "color416bit.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "color416bit.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "color416bit.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.10526315789473684,
+          "borderMax": 1
+        },
+        {
+          "file": "color616bit.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "color616bit.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "color616bit.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "color616bit.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.14035087719298245,
+          "borderMax": 1
+        },
+        {
+          "file": "adam7-2.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "adam7-2.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "adam7-2.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "adam7-2.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.2532418001525553,
+          "borderMax": 1
+        },
+        {
+          "file": "adam7-6.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "adam7-6.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "adam7-6.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "adam7-6.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.2532418001525553,
+          "borderMax": 1
+        }
+      ],
+      "performance": [],
+      "privacy": {
+        "unexpectedRequests": [],
+        "pageCalls": [],
+        "workerCalls": []
+      },
+      "offline": true,
+      "errors": [],
+      "crashes": 0,
+      "nativeCanvasPNG": {
+        "color": 6,
+        "depth": 8,
+        "chunks": [
+          "IHDR",
+          "IDAT",
+          "IEND"
+        ]
+      },
+      "orientationProbe": [
+        {
+          "orientation": 1,
+          "width": 125,
+          "height": 75
+        },
+        {
+          "orientation": 2,
+          "width": 125,
+          "height": 75
+        },
+        {
+          "orientation": 3,
+          "width": 125,
+          "height": 75
+        },
+        {
+          "orientation": 4,
+          "width": 125,
+          "height": 75
+        },
+        {
+          "orientation": 5,
+          "width": 125,
+          "height": 75
+        },
+        {
+          "orientation": 6,
+          "width": 125,
+          "height": 75
+        },
+        {
+          "orientation": 7,
+          "width": 125,
+          "height": 75
+        },
+        {
+          "orientation": 8,
+          "width": 125,
+          "height": 75
+        }
+      ],
+      "canvasFallback": {
+        "max": 0,
+        "mean": 0,
+        "borderMax": 0
+      },
+      "mobileOverflow": false,
+      "urls": {
+        "created": 133,
+        "revoked": 133
+      }
+    }
+  ],
+  "tolerance": {
+    "pngMax": 0,
+    "blurMax": 2,
+    "pixelMax": 2,
+    "mean": 0.5,
+    "jpegDecodeMax": 3,
+    "jpegDecodeMean": 0.5,
+    "jpegPipelineMax": 5,
+    "jpegPipelineMean": 0.7
+  }
+}

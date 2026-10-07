@@ -1,44 +1,61 @@
 import {Config,Mode,itemName,outputName,MAX_BYTES} from './core';
 import {bitmapRGB} from './codec';
+import {detectCapabilities} from './capabilities';
+import {AnonymizerError,MESSAGES} from './errors';
 import {ReviewState} from './state';
 const el=<T extends HTMLElement>(id:string)=>document.getElementById(id) as T;
 const filesInput=el<HTMLInputElement>('files'),processButton=el<HTMLButtonElement>('process'),clearButton=el<HTMLButtonElement>('clear');
 const review=el<HTMLInputElement>('review'),download=el<HTMLButtonElement>('download'),progress=el<HTMLProgressElement>('progress');
 const state=new ReviewState();
-let files:File[]=[],results:{index:number;original:Blob;output:Blob;width:number;height:number;ms:number}[]=[],valid=false,busy=false,worker:Worker;
+let files:File[]=[],results:{index:number;original:Blob;output:Blob;width:number;height:number;ms:number}[]=[],valid=false,busy=false,worker:Worker|undefined;
 let requestId=0;const pending=new Map<number,{resolve:(v:any)=>void;reject:()=>void}>();
 let previewURLs:string[]=[],zipURL:string|undefined;
+let supported=detectCapabilities(globalThis,true).supported;
+let readyResolve!:(ok:boolean)=>void;
+const ready=new Promise<boolean>(resolve=>{readyResolve=resolve;});
+let readyTimer:ReturnType<typeof setTimeout>;
+function disableBrowser(){supported=false;clearTimeout(readyTimer);readyResolve(false);worker?.terminate();for(const wait of pending.values())wait.reject();pending.clear();invalidate();message(MESSAGES.browser);updateControls();}
 const controls=['mode','top','bottom','left','right'];
 function config():Config{return {mode:el<HTMLSelectElement>('mode').value as Mode,...Object.fromEntries(controls.slice(1).map(k=>[k,Number(el<HTMLInputElement>(k).value)]))} as Config;}
 function spawnWorker(){
-  worker=new Worker(new URL('./worker.js',import.meta.url),{type:'module'});
+  try{worker=new Worker(new URL('./worker.js',import.meta.url),{type:'module'});}catch{disableBrowser();return;}
+  const activeWorker=worker;
+  readyTimer=setTimeout(disableBrowser,15_000);
   worker.onmessage=async({data})=>{
+    if(!supported)return;
+    if(data.type==='ready'){clearTimeout(readyTimer);if(!data.capabilities.supported){disableBrowser();return;}readyResolve(true);return;}
     if(data.type==='canvas'){
-      try{const p=await bitmapRGB(data.blob,data.width,data.height,true);worker.postMessage({type:'canvasResult',token:data.token,pixels:{...p,rgb:p.rgb.buffer}},[p.rgb.buffer]);}
-      catch{worker.postMessage({type:'canvasResult',token:data.token,error:true});}
+      try{const p=await bitmapRGB(data.blob,data.width,data.height,true);activeWorker.postMessage({type:'canvasResult',token:data.token,pixels:{...p,rgb:p.rgb.buffer}},[p.rgb.buffer]);}
+      catch{try{activeWorker.postMessage({type:'canvasResult',token:data.token,error:true});}catch{disableBrowser();}}
       return;
     }
     const waiting=pending.get(data.id);pending.delete(data.id);waiting?.resolve(data);
   };
-  worker.onerror=(event)=>{event.preventDefault();worker.terminate();for(const wait of pending.values())wait.reject();pending.clear();spawnWorker();};
+  worker.onerror=(event)=>{event.preventDefault();disableBrowser();};
+  worker.onmessageerror=disableBrowser;
 }
-spawnWorker();
-function request(data:Record<string,unknown>,transfer:Transferable[]=[]):Promise<any>{
+if(supported)spawnWorker();else{readyResolve(false);filesInput.disabled=true;message(MESSAGES.browser);}
+async function request(data:Record<string,unknown>,transfer:Transferable[]=[]):Promise<any>{
+  if(!supported||!await ready||!worker)throw new AnonymizerError('browser');
   const id=++requestId;
-  return new Promise((resolve,reject)=>{pending.set(id,{resolve,reject:()=>reject(new Error('Falha local de processamento.'))});worker.postMessage({...data,id},transfer);});
+  return new Promise((resolve,reject)=>{
+    const timer=setTimeout(disableBrowser,300_000);
+    pending.set(id,{resolve:value=>{clearTimeout(timer);resolve(value);},reject:()=>{clearTimeout(timer);reject(new AnonymizerError('processing'));}});
+    try{worker!.postMessage({...data,id},transfer);}catch{const waiting=pending.get(id);pending.delete(id);waiting?.reject();}
+  });
 }
 async function imageRequest(file:File,operation:string){
-  if(file.size>MAX_BYTES||!file.size)return {ok:false,message:'Arquivo vazio ou acima de 64 MiB.'};
+  if(file.size>MAX_BYTES||!file.size)return {ok:false,message:MESSAGES.invalid};
   const bytes=await file.arrayBuffer(),extension=file.name.split('.').pop()?.toLowerCase()??'';
   return request({bytes,extension,operation,config:config()},[bytes]);
 }
-function message(text:string){el('status').textContent=text;}
+function message(text:string){el('status').textContent=supported?text:MESSAGES.browser;}
 function error(index:number,text:string){const li=document.createElement('li');li.textContent=(index?itemName(index)+': ':'')+text;el('errors').append(li);}
 function releasePreviews(){for(const url of previewURLs)URL.revokeObjectURL(url);previewURLs=[];for(const image of el('comparisons').querySelectorAll('img'))image.remove();}
 function revokeZIP(){if(zipURL){URL.revokeObjectURL(zipURL);zipURL=undefined;}}
 function updateControls(){
-  filesInput.disabled=busy;controls.forEach(k=>(el(k) as HTMLInputElement).disabled=busy);
-  clearButton.disabled=busy||!files.length;processButton.disabled=busy||!valid;
+  filesInput.disabled=busy||!supported;controls.forEach(k=>(el(k) as HTMLInputElement).disabled=busy);
+  clearButton.disabled=busy||!files.length;processButton.disabled=busy||!valid||!supported;
   review.disabled=busy||!results.length||state.outputRevision!==state.processingRevision;
   download.disabled=busy||!results.length||!state.canExport;
   for(const button of el('items').querySelectorAll('button'))button.disabled=busy||button.dataset.blocked==='true';
@@ -121,8 +138,8 @@ processButton.onclick=async()=>{
       message('Processando '+itemName(i+1)+' de '+files.length+'…');
       try{
         const response=await imageRequest(files[i],'process');
-        if(response.ok)results.push({index:i+1,...response});else error(i+1,'Falha inesperada de processamento. Item excluído do ZIP; tente novamente ou remova-o.');
-      }catch{error(i+1,'Falha inesperada de processamento. Item excluído do ZIP; tente novamente ou remova-o.');}
+        if(response.ok)results.push({index:i+1,...response});else error(i+1,response.message+' Item excluído do ZIP.');
+      }catch{error(i+1,MESSAGES.processing+' Item excluído do ZIP.');}
       progress.value=i+1;
     }
     if(revision===state.processingRevision&&results.length){
@@ -150,4 +167,5 @@ download.onclick=async()=>{
   }catch{message('Não foi possível gerar o ZIP local. Tente novamente.');}
   finally{busy=false;updateControls();}
 };
-window.addEventListener('pagehide',()=>{releasePreviews();revokeZIP();worker.terminate();files=[];results=[];});
+window.addEventListener('pagehide',()=>{clearTimeout(readyTimer);releasePreviews();revokeZIP();worker?.terminate();for(const wait of pending.values())wait.reject();pending.clear();files=[];results=[];valid=false;busy=false;supported=false;invalidate();el('items').replaceChildren();});
+window.addEventListener('pageshow',event=>{if(event.persisted)location.reload();});
