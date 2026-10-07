@@ -1,0 +1,3338 @@
+{
+  "started": "2026-10-06T16:17:52.724Z",
+  "stress": false,
+  "extras": false,
+  "browsers": [
+    {
+      "name": "Chrome",
+      "version": "155.0.8059.27",
+      "cases": [
+        {
+          "file": "rgb.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "rgb.png",
+          "mode": "top",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "rgb.png",
+          "mode": "bottom",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "rgb.png",
+          "mode": "left",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "rgb.png",
+          "mode": "right",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "rgb.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "rgb.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "rgb.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        },
+        {
+          "file": "round.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "round.png",
+          "mode": "top",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "round.png",
+          "mode": "bottom",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "round.png",
+          "mode": "left",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "round.png",
+          "mode": "right",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "round.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "round.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "round.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06971428571428571,
+          "borderMax": 1
+        },
+        {
+          "file": "thin.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "thin.png",
+          "mode": "top",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "thin.png",
+          "mode": "bottom",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "thin.png",
+          "mode": "left",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "thin.png",
+          "mode": "right",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "thin.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "thin.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "thin.png",
+          "mode": "pixel",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "opaque.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "opaque.png",
+          "mode": "top",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "opaque.png",
+          "mode": "bottom",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "opaque.png",
+          "mode": "left",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "opaque.png",
+          "mode": "right",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "opaque.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "opaque.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "opaque.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        },
+        {
+          "file": "partial.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "partial.png",
+          "mode": "top",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "partial.png",
+          "mode": "bottom",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "partial.png",
+          "mode": "left",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "partial.png",
+          "mode": "right",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "partial.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "partial.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "partial.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        },
+        {
+          "file": "transparent.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "transparent.png",
+          "mode": "top",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "transparent.png",
+          "mode": "bottom",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "transparent.png",
+          "mode": "left",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "transparent.png",
+          "mode": "right",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "transparent.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "transparent.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "transparent.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        },
+        {
+          "file": "gray.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray.png",
+          "mode": "top",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray.png",
+          "mode": "bottom",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray.png",
+          "mode": "left",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray.png",
+          "mode": "right",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray.png",
+          "mode": "pixel",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "palette.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "palette.png",
+          "mode": "top",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "palette.png",
+          "mode": "bottom",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "palette.png",
+          "mode": "left",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "palette.png",
+          "mode": "right",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "palette.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "palette.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "palette.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.009244444444444444,
+          "borderMax": 1
+        },
+        {
+          "file": "gray16.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray16.png",
+          "mode": "top",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray16.png",
+          "mode": "bottom",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray16.png",
+          "mode": "left",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray16.png",
+          "mode": "right",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray16.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray16.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray16.png",
+          "mode": "pixel",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation1.jpg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation1.jpg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation1.jpg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation1.jpg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        },
+        {
+          "file": "orientation2.jpeg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation2.jpeg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation2.jpeg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation2.jpeg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        },
+        {
+          "file": "orientation3.jpg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation3.jpg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation3.jpg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation3.jpg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        },
+        {
+          "file": "orientation4.jpeg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation4.jpeg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation4.jpeg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation4.jpeg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        },
+        {
+          "file": "orientation5.jpg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation5.jpg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation5.jpg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation5.jpg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        },
+        {
+          "file": "orientation6.jpeg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation6.jpeg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation6.jpeg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation6.jpeg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        },
+        {
+          "file": "orientation7.jpg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation7.jpg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation7.jpg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation7.jpg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        },
+        {
+          "file": "orientation8.jpeg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation8.jpeg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation8.jpeg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation8.jpeg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        },
+        {
+          "file": "progressive.jpg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "progressive.jpg",
+          "mode": "top",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "progressive.jpg",
+          "mode": "bottom",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "progressive.jpg",
+          "mode": "left",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "progressive.jpg",
+          "mode": "right",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "progressive.jpg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "progressive.jpg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "progressive.jpg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.11093333333333333,
+          "borderMax": 1
+        },
+        {
+          "file": "PACIENTE-TESTE-PRIVACIDADE-7F2A9C.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "PACIENTE-TESTE-PRIVACIDADE-7F2A9C.png",
+          "mode": "top",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "PACIENTE-TESTE-PRIVACIDADE-7F2A9C.png",
+          "mode": "bottom",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "PACIENTE-TESTE-PRIVACIDADE-7F2A9C.png",
+          "mode": "left",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "PACIENTE-TESTE-PRIVACIDADE-7F2A9C.png",
+          "mode": "right",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "PACIENTE-TESTE-PRIVACIDADE-7F2A9C.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "PACIENTE-TESTE-PRIVACIDADE-7F2A9C.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "PACIENTE-TESTE-PRIVACIDADE-7F2A9C.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        }
+      ],
+      "performance": [
+        {
+          "count": 1,
+          "mode": "tarja",
+          "corpus": "1600x1200",
+          "totalMs": 637,
+          "validationMs": 153,
+          "zipMs": 207,
+          "fullFlowMs": 1103,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 0.580 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 3.7999999970197678,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 4614615,
+              "total": 9527915
+            }
+          },
+          "zipBytes": 5303415
+        },
+        {
+          "count": 5,
+          "mode": "tarja",
+          "corpus": "1600x1200",
+          "totalMs": 2965,
+          "validationMs": 682,
+          "zipMs": 659,
+          "fullFlowMs": 4417,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 0.566 s",
+            "Item 002 · 1600 × 1200 · 0.580 s",
+            "Item 003 · 1600 × 1200 · 0.576 s",
+            "Item 004 · 1600 × 1200 · 0.577 s",
+            "Item 005 · 1600 × 1200 · 0.588 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 11.700000002980232,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 4637868,
+              "total": 9265080
+            }
+          },
+          "zipBytes": 26517075
+        },
+        {
+          "count": 10,
+          "mode": "tarja",
+          "corpus": "1600x1200",
+          "totalMs": 5885,
+          "validationMs": 1314,
+          "zipMs": 1115,
+          "fullFlowMs": 8390,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 0.590 s",
+            "Item 002 · 1600 × 1200 · 0.567 s",
+            "Item 003 · 1600 × 1200 · 0.582 s",
+            "Item 004 · 1600 × 1200 · 0.584 s",
+            "Item 005 · 1600 × 1200 · 0.576 s",
+            "Item 006 · 1600 × 1200 · 0.580 s",
+            "Item 007 · 1600 × 1200 · 0.570 s",
+            "Item 008 · 1600 × 1200 · 0.574 s",
+            "Item 009 · 1600 × 1200 · 0.569 s",
+            "Item 010 · 1600 × 1200 · 0.576 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 13.600000008940697,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 4672631,
+              "total": 10049971
+            }
+          },
+          "zipBytes": 53034150
+        },
+        {
+          "count": 1,
+          "mode": "desfoque",
+          "corpus": "1600x1200",
+          "totalMs": 1143,
+          "validationMs": 174,
+          "zipMs": 248,
+          "fullFlowMs": 1778,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 1.073 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 64,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 4645096,
+              "total": 8738396
+            }
+          },
+          "zipBytes": 5703587
+        },
+        {
+          "count": 5,
+          "mode": "desfoque",
+          "corpus": "1600x1200",
+          "totalMs": 5399,
+          "validationMs": 661,
+          "zipMs": 663,
+          "fullFlowMs": 6852,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 1.062 s",
+            "Item 002 · 1600 × 1200 · 1.087 s",
+            "Item 003 · 1600 × 1200 · 1.073 s",
+            "Item 004 · 1600 × 1200 · 1.062 s",
+            "Item 005 · 1600 × 1200 · 1.056 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 12.099999994039536,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 5031935,
+              "total": 9001035
+            }
+          },
+          "zipBytes": 28517935
+        },
+        {
+          "count": 10,
+          "mode": "desfoque",
+          "corpus": "1600x1200",
+          "totalMs": 10945,
+          "validationMs": 1360,
+          "zipMs": 2196,
+          "fullFlowMs": 14618,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 1.095 s",
+            "Item 002 · 1600 × 1200 · 1.079 s",
+            "Item 003 · 1600 × 1200 · 1.090 s",
+            "Item 004 · 1600 × 1200 · 1.090 s",
+            "Item 005 · 1600 × 1200 · 1.072 s",
+            "Item 006 · 1600 × 1200 · 1.078 s",
+            "Item 007 · 1600 × 1200 · 1.091 s",
+            "Item 008 · 1600 × 1200 · 1.072 s",
+            "Item 009 · 1600 × 1200 · 1.073 s",
+            "Item 010 · 1600 × 1200 · 1.111 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 14.200000002980232,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 4680482,
+              "total": 6638634
+            }
+          },
+          "zipBytes": 57035870
+        },
+        {
+          "count": 1,
+          "mode": "pixelizacao",
+          "corpus": "1600x1200",
+          "totalMs": 639,
+          "validationMs": 159,
+          "zipMs": 1457,
+          "fullFlowMs": 2438,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 0.580 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 17.5,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 4667302,
+              "total": 7162634
+            }
+          },
+          "zipBytes": 5310080
+        },
+        {
+          "count": 5,
+          "mode": "pixelizacao",
+          "corpus": "1600x1200",
+          "totalMs": 2954,
+          "validationMs": 669,
+          "zipMs": 5512,
+          "fullFlowMs": 9241,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 0.586 s",
+            "Item 002 · 1600 × 1200 · 0.578 s",
+            "Item 003 · 1600 × 1200 · 0.575 s",
+            "Item 004 · 1600 × 1200 · 0.573 s",
+            "Item 005 · 1600 × 1200 · 0.577 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 26.30000001192093,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 4559270,
+              "total": 5327382
+            }
+          },
+          "zipBytes": 26550400
+        },
+        {
+          "count": 10,
+          "mode": "pixelizacao",
+          "corpus": "1600x1200",
+          "totalMs": 5856,
+          "validationMs": 1278,
+          "zipMs": 980,
+          "fullFlowMs": 8235,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 0.561 s",
+            "Item 002 · 1600 × 1200 · 0.578 s",
+            "Item 003 · 1600 × 1200 · 0.578 s",
+            "Item 004 · 1600 × 1200 · 0.586 s",
+            "Item 005 · 1600 × 1200 · 0.579 s",
+            "Item 006 · 1600 × 1200 · 0.574 s",
+            "Item 007 · 1600 × 1200 · 0.576 s",
+            "Item 008 · 1600 × 1200 · 0.575 s",
+            "Item 009 · 1600 × 1200 · 0.577 s",
+            "Item 010 · 1600 × 1200 · 0.578 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 29,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 4715211,
+              "total": 6638571
+            }
+          },
+          "zipBytes": 53100800
+        }
+      ],
+      "privacy": {
+        "unexpectedRequests": [],
+        "pageCalls": [],
+        "workerCalls": []
+      },
+      "offline": true,
+      "errors": [],
+      "crashes": 0,
+      "mobileOverflow": false,
+      "urls": {
+        "created": 409,
+        "revoked": 409
+      }
+    },
+    {
+      "name": "Edge",
+      "version": "154.0.4258.53",
+      "cases": [
+        {
+          "file": "rgb.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "rgb.png",
+          "mode": "top",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "rgb.png",
+          "mode": "bottom",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "rgb.png",
+          "mode": "left",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "rgb.png",
+          "mode": "right",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "rgb.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "rgb.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "rgb.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        },
+        {
+          "file": "round.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "round.png",
+          "mode": "top",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "round.png",
+          "mode": "bottom",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "round.png",
+          "mode": "left",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "round.png",
+          "mode": "right",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "round.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "round.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "round.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06971428571428571,
+          "borderMax": 1
+        },
+        {
+          "file": "thin.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "thin.png",
+          "mode": "top",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "thin.png",
+          "mode": "bottom",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "thin.png",
+          "mode": "left",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "thin.png",
+          "mode": "right",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "thin.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "thin.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "thin.png",
+          "mode": "pixel",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "opaque.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "opaque.png",
+          "mode": "top",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "opaque.png",
+          "mode": "bottom",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "opaque.png",
+          "mode": "left",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "opaque.png",
+          "mode": "right",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "opaque.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "opaque.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "opaque.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        },
+        {
+          "file": "partial.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "partial.png",
+          "mode": "top",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "partial.png",
+          "mode": "bottom",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "partial.png",
+          "mode": "left",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "partial.png",
+          "mode": "right",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "partial.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "partial.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "partial.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        },
+        {
+          "file": "transparent.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "transparent.png",
+          "mode": "top",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "transparent.png",
+          "mode": "bottom",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "transparent.png",
+          "mode": "left",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "transparent.png",
+          "mode": "right",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "transparent.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "transparent.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "transparent.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        },
+        {
+          "file": "gray.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray.png",
+          "mode": "top",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray.png",
+          "mode": "bottom",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray.png",
+          "mode": "left",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray.png",
+          "mode": "right",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray.png",
+          "mode": "pixel",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "palette.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "palette.png",
+          "mode": "top",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "palette.png",
+          "mode": "bottom",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "palette.png",
+          "mode": "left",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "palette.png",
+          "mode": "right",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "palette.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "palette.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "palette.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.009244444444444444,
+          "borderMax": 1
+        },
+        {
+          "file": "gray16.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray16.png",
+          "mode": "top",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray16.png",
+          "mode": "bottom",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray16.png",
+          "mode": "left",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray16.png",
+          "mode": "right",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray16.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray16.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray16.png",
+          "mode": "pixel",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation1.jpg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation1.jpg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation1.jpg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation1.jpg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        },
+        {
+          "file": "orientation2.jpeg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation2.jpeg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation2.jpeg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation2.jpeg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        },
+        {
+          "file": "orientation3.jpg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation3.jpg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation3.jpg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation3.jpg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        },
+        {
+          "file": "orientation4.jpeg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation4.jpeg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation4.jpeg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation4.jpeg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        },
+        {
+          "file": "orientation5.jpg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation5.jpg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation5.jpg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation5.jpg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        },
+        {
+          "file": "orientation6.jpeg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation6.jpeg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation6.jpeg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation6.jpeg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        },
+        {
+          "file": "orientation7.jpg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation7.jpg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation7.jpg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation7.jpg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        },
+        {
+          "file": "orientation8.jpeg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation8.jpeg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation8.jpeg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation8.jpeg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        },
+        {
+          "file": "progressive.jpg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "progressive.jpg",
+          "mode": "top",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "progressive.jpg",
+          "mode": "bottom",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "progressive.jpg",
+          "mode": "left",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "progressive.jpg",
+          "mode": "right",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "progressive.jpg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "progressive.jpg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "progressive.jpg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.11093333333333333,
+          "borderMax": 1
+        },
+        {
+          "file": "PACIENTE-TESTE-PRIVACIDADE-7F2A9C.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "PACIENTE-TESTE-PRIVACIDADE-7F2A9C.png",
+          "mode": "top",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "PACIENTE-TESTE-PRIVACIDADE-7F2A9C.png",
+          "mode": "bottom",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "PACIENTE-TESTE-PRIVACIDADE-7F2A9C.png",
+          "mode": "left",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "PACIENTE-TESTE-PRIVACIDADE-7F2A9C.png",
+          "mode": "right",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "PACIENTE-TESTE-PRIVACIDADE-7F2A9C.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "PACIENTE-TESTE-PRIVACIDADE-7F2A9C.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "PACIENTE-TESTE-PRIVACIDADE-7F2A9C.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        }
+      ],
+      "performance": [
+        {
+          "count": 1,
+          "mode": "tarja",
+          "corpus": "1600x1200",
+          "totalMs": 658,
+          "validationMs": 144,
+          "zipMs": 278,
+          "fullFlowMs": 1148,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 0.586 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 14.400000005960464,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 4652102,
+              "total": 7954862
+            }
+          },
+          "zipBytes": 5303415
+        },
+        {
+          "count": 5,
+          "mode": "tarja",
+          "corpus": "1600x1200",
+          "totalMs": 3029,
+          "validationMs": 662,
+          "zipMs": 594,
+          "fullFlowMs": 4398,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 0.594 s",
+            "Item 002 · 1600 × 1200 · 0.595 s",
+            "Item 003 · 1600 × 1200 · 0.588 s",
+            "Item 004 · 1600 × 1200 · 0.584 s",
+            "Item 005 · 1600 × 1200 · 0.588 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 13.200000002980232,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 4662715,
+              "total": 7429883
+            }
+          },
+          "zipBytes": 26517075
+        },
+        {
+          "count": 10,
+          "mode": "tarja",
+          "corpus": "1600x1200",
+          "totalMs": 6196,
+          "validationMs": 1331,
+          "zipMs": 1042,
+          "fullFlowMs": 8681,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 0.614 s",
+            "Item 002 · 1600 × 1200 · 0.613 s",
+            "Item 003 · 1600 × 1200 · 0.605 s",
+            "Item 004 · 1600 × 1200 · 0.596 s",
+            "Item 005 · 1600 × 1200 · 0.613 s",
+            "Item 006 · 1600 × 1200 · 0.589 s",
+            "Item 007 · 1600 × 1200 · 0.614 s",
+            "Item 008 · 1600 × 1200 · 0.597 s",
+            "Item 009 · 1600 × 1200 · 0.608 s",
+            "Item 010 · 1600 × 1200 · 0.611 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 33.900000005960464,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 4653647,
+              "total": 6641847
+            }
+          },
+          "zipBytes": 53034150
+        },
+        {
+          "count": 1,
+          "mode": "desfoque",
+          "corpus": "1600x1200",
+          "totalMs": 1206,
+          "validationMs": 150,
+          "zipMs": 232,
+          "fullFlowMs": 1655,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 1.118 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 13.600000008940697,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 5002483,
+              "total": 6904363
+            }
+          },
+          "zipBytes": 5703587
+        },
+        {
+          "count": 5,
+          "mode": "desfoque",
+          "corpus": "1600x1200",
+          "totalMs": 5619,
+          "validationMs": 695,
+          "zipMs": 632,
+          "fullFlowMs": 7055,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 1.098 s",
+            "Item 002 · 1600 × 1200 · 1.101 s",
+            "Item 003 · 1600 × 1200 · 1.106 s",
+            "Item 004 · 1600 × 1200 · 1.110 s",
+            "Item 005 · 1600 × 1200 · 1.122 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 61.19999998807907,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 4692523,
+              "total": 5853499
+            }
+          },
+          "zipBytes": 28517935
+        },
+        {
+          "count": 10,
+          "mode": "desfoque",
+          "corpus": "1600x1200",
+          "totalMs": 11364,
+          "validationMs": 1339,
+          "zipMs": 1240,
+          "fullFlowMs": 14071,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 1.100 s",
+            "Item 002 · 1600 × 1200 · 1.141 s",
+            "Item 003 · 1600 × 1200 · 1.132 s",
+            "Item 004 · 1600 × 1200 · 1.103 s",
+            "Item 005 · 1600 × 1200 · 1.119 s",
+            "Item 006 · 1600 × 1200 · 1.116 s",
+            "Item 007 · 1600 × 1200 · 1.126 s",
+            "Item 008 · 1600 × 1200 · 1.147 s",
+            "Item 009 · 1600 × 1200 · 1.108 s",
+            "Item 010 · 1600 × 1200 · 1.129 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 13.799999997019768,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 5160518,
+              "total": 6378434
+            }
+          },
+          "zipBytes": 57035870
+        },
+        {
+          "count": 1,
+          "mode": "pixelizacao",
+          "corpus": "1600x1200",
+          "totalMs": 708,
+          "validationMs": 185,
+          "zipMs": 219,
+          "fullFlowMs": 1311,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 0.651 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 40.20000000298023,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 4701346,
+              "total": 6900490
+            }
+          },
+          "zipBytes": 5310080
+        },
+        {
+          "count": 5,
+          "mode": "pixelizacao",
+          "corpus": "1600x1200",
+          "totalMs": 3181,
+          "validationMs": 740,
+          "zipMs": 576,
+          "fullFlowMs": 4573,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 0.621 s",
+            "Item 002 · 1600 × 1200 · 0.606 s",
+            "Item 003 · 1600 × 1200 · 0.611 s",
+            "Item 004 · 1600 × 1200 · 0.615 s",
+            "Item 005 · 1600 × 1200 · 0.610 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 14.200000002980232,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 5101104,
+              "total": 7425276
+            }
+          },
+          "zipBytes": 26550400
+        },
+        {
+          "count": 10,
+          "mode": "pixelizacao",
+          "corpus": "1600x1200",
+          "totalMs": 6349,
+          "validationMs": 1317,
+          "zipMs": 1294,
+          "fullFlowMs": 9068,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 0.652 s",
+            "Item 002 · 1600 × 1200 · 0.626 s",
+            "Item 003 · 1600 × 1200 · 0.642 s",
+            "Item 004 · 1600 × 1200 · 0.627 s",
+            "Item 005 · 1600 × 1200 · 0.629 s",
+            "Item 006 · 1600 × 1200 · 0.610 s",
+            "Item 007 · 1600 × 1200 · 0.616 s",
+            "Item 008 · 1600 × 1200 · 0.599 s",
+            "Item 009 · 1600 × 1200 · 0.610 s",
+            "Item 010 · 1600 × 1200 · 0.608 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 35.1000000089407,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": {
+              "used": 4727926,
+              "total": 6376490
+            }
+          },
+          "zipBytes": 53100800
+        }
+      ],
+      "privacy": {
+        "unexpectedRequests": [],
+        "pageCalls": [],
+        "workerCalls": []
+      },
+      "offline": true,
+      "errors": [],
+      "crashes": 0,
+      "mobileOverflow": false,
+      "urls": {
+        "created": 409,
+        "revoked": 409
+      }
+    },
+    {
+      "name": "Firefox",
+      "version": "142.0.1",
+      "cases": [
+        {
+          "file": "rgb.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "rgb.png",
+          "mode": "top",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "rgb.png",
+          "mode": "bottom",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "rgb.png",
+          "mode": "left",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "rgb.png",
+          "mode": "right",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "rgb.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "rgb.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "rgb.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        },
+        {
+          "file": "round.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "round.png",
+          "mode": "top",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "round.png",
+          "mode": "bottom",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "round.png",
+          "mode": "left",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "round.png",
+          "mode": "right",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "round.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "round.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "round.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06971428571428571,
+          "borderMax": 1
+        },
+        {
+          "file": "thin.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "thin.png",
+          "mode": "top",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "thin.png",
+          "mode": "bottom",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "thin.png",
+          "mode": "left",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "thin.png",
+          "mode": "right",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "thin.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "thin.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "thin.png",
+          "mode": "pixel",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "opaque.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "opaque.png",
+          "mode": "top",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "opaque.png",
+          "mode": "bottom",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "opaque.png",
+          "mode": "left",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "opaque.png",
+          "mode": "right",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "opaque.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "opaque.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "opaque.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        },
+        {
+          "file": "partial.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "partial.png",
+          "mode": "top",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "partial.png",
+          "mode": "bottom",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "partial.png",
+          "mode": "left",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "partial.png",
+          "mode": "right",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "partial.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "partial.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "partial.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        },
+        {
+          "file": "transparent.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "transparent.png",
+          "mode": "top",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "transparent.png",
+          "mode": "bottom",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "transparent.png",
+          "mode": "left",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "transparent.png",
+          "mode": "right",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "transparent.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "transparent.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "transparent.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        },
+        {
+          "file": "gray.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray.png",
+          "mode": "top",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray.png",
+          "mode": "bottom",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray.png",
+          "mode": "left",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray.png",
+          "mode": "right",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray.png",
+          "mode": "pixel",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "palette.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "palette.png",
+          "mode": "top",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "palette.png",
+          "mode": "bottom",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "palette.png",
+          "mode": "left",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "palette.png",
+          "mode": "right",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "palette.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "palette.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "palette.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.009244444444444444,
+          "borderMax": 1
+        },
+        {
+          "file": "gray16.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray16.png",
+          "mode": "top",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray16.png",
+          "mode": "bottom",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray16.png",
+          "mode": "left",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray16.png",
+          "mode": "right",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray16.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray16.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "gray16.png",
+          "mode": "pixel",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation1.jpg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation1.jpg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation1.jpg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation1.jpg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        },
+        {
+          "file": "orientation2.jpeg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation2.jpeg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation2.jpeg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation2.jpeg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        },
+        {
+          "file": "orientation3.jpg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation3.jpg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation3.jpg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation3.jpg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        },
+        {
+          "file": "orientation4.jpeg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation4.jpeg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation4.jpeg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation4.jpeg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        },
+        {
+          "file": "orientation5.jpg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation5.jpg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation5.jpg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation5.jpg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        },
+        {
+          "file": "orientation6.jpeg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation6.jpeg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation6.jpeg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation6.jpeg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        },
+        {
+          "file": "orientation7.jpg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation7.jpg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation7.jpg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation7.jpg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        },
+        {
+          "file": "orientation8.jpeg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation8.jpeg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation8.jpeg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "orientation8.jpeg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        },
+        {
+          "file": "progressive.jpg",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "progressive.jpg",
+          "mode": "top",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "progressive.jpg",
+          "mode": "bottom",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "progressive.jpg",
+          "mode": "left",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "progressive.jpg",
+          "mode": "right",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "progressive.jpg",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "progressive.jpg",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "progressive.jpg",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.11093333333333333,
+          "borderMax": 1
+        },
+        {
+          "file": "PACIENTE-TESTE-PRIVACIDADE-7F2A9C.png",
+          "mode": "none",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "PACIENTE-TESTE-PRIVACIDADE-7F2A9C.png",
+          "mode": "top",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "PACIENTE-TESTE-PRIVACIDADE-7F2A9C.png",
+          "mode": "bottom",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "PACIENTE-TESTE-PRIVACIDADE-7F2A9C.png",
+          "mode": "left",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "PACIENTE-TESTE-PRIVACIDADE-7F2A9C.png",
+          "mode": "right",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "PACIENTE-TESTE-PRIVACIDADE-7F2A9C.png",
+          "mode": "all",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "PACIENTE-TESTE-PRIVACIDADE-7F2A9C.png",
+          "mode": "blur",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "file": "PACIENTE-TESTE-PRIVACIDADE-7F2A9C.png",
+          "mode": "pixel",
+          "max": 1,
+          "mean": 0.06282666666666667,
+          "borderMax": 1
+        }
+      ],
+      "performance": [
+        {
+          "count": 1,
+          "mode": "tarja",
+          "corpus": "1600x1200",
+          "totalMs": 1399,
+          "validationMs": 508,
+          "zipMs": 249,
+          "fullFlowMs": 2320,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 1.342 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 17,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": null
+          },
+          "zipBytes": 5303379
+        },
+        {
+          "count": 5,
+          "mode": "tarja",
+          "corpus": "1600x1200",
+          "totalMs": 7374,
+          "validationMs": 2805,
+          "zipMs": 938,
+          "fullFlowMs": 11271,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 1.402 s",
+            "Item 002 · 1600 × 1200 · 1.371 s",
+            "Item 003 · 1600 × 1200 · 1.704 s",
+            "Item 004 · 1600 × 1200 · 1.340 s",
+            "Item 005 · 1600 × 1200 · 1.472 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 22,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": null
+          },
+          "zipBytes": 26516895
+        },
+        {
+          "count": 10,
+          "mode": "tarja",
+          "corpus": "1600x1200",
+          "totalMs": 13051,
+          "validationMs": 4949,
+          "zipMs": 1725,
+          "fullFlowMs": 20240,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 1.291 s",
+            "Item 002 · 1600 × 1200 · 1.284 s",
+            "Item 003 · 1600 × 1200 · 1.302 s",
+            "Item 004 · 1600 × 1200 · 1.300 s",
+            "Item 005 · 1600 × 1200 · 1.289 s",
+            "Item 006 · 1600 × 1200 · 1.252 s",
+            "Item 007 · 1600 × 1200 · 1.323 s",
+            "Item 008 · 1600 × 1200 · 1.274 s",
+            "Item 009 · 1600 × 1200 · 1.306 s",
+            "Item 010 · 1600 × 1200 · 1.340 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 20,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": null
+          },
+          "zipBytes": 53033790
+        },
+        {
+          "count": 1,
+          "mode": "desfoque",
+          "corpus": "1600x1200",
+          "totalMs": 1755,
+          "validationMs": 609,
+          "zipMs": 277,
+          "fullFlowMs": 2832,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 1.676 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 16,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": null
+          },
+          "zipBytes": 5704031
+        },
+        {
+          "count": 5,
+          "mode": "desfoque",
+          "corpus": "1600x1200",
+          "totalMs": 7994,
+          "validationMs": 2710,
+          "zipMs": 880,
+          "fullFlowMs": 11750,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 1.633 s",
+            "Item 002 · 1600 × 1200 · 1.583 s",
+            "Item 003 · 1600 × 1200 · 1.557 s",
+            "Item 004 · 1600 × 1200 · 1.554 s",
+            "Item 005 · 1600 × 1200 · 1.587 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 18,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": null
+          },
+          "zipBytes": 28520155
+        },
+        {
+          "count": 10,
+          "mode": "desfoque",
+          "corpus": "1600x1200",
+          "totalMs": 15973,
+          "validationMs": 5594,
+          "zipMs": 1690,
+          "fullFlowMs": 23443,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 1.644 s",
+            "Item 002 · 1600 × 1200 · 1.618 s",
+            "Item 003 · 1600 × 1200 · 1.634 s",
+            "Item 004 · 1600 × 1200 · 1.636 s",
+            "Item 005 · 1600 × 1200 · 1.567 s",
+            "Item 006 · 1600 × 1200 · 1.565 s",
+            "Item 007 · 1600 × 1200 · 1.535 s",
+            "Item 008 · 1600 × 1200 · 1.602 s",
+            "Item 009 · 1600 × 1200 · 1.537 s",
+            "Item 010 · 1600 × 1200 · 1.544 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 26,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": null
+          },
+          "zipBytes": 57040310
+        },
+        {
+          "count": 1,
+          "mode": "pixelizacao",
+          "corpus": "1600x1200",
+          "totalMs": 1421,
+          "validationMs": 534,
+          "zipMs": 238,
+          "fullFlowMs": 2349,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 1.352 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 15,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": null
+          },
+          "zipBytes": 5310196
+        },
+        {
+          "count": 5,
+          "mode": "pixelizacao",
+          "corpus": "1600x1200",
+          "totalMs": 6631,
+          "validationMs": 2484,
+          "zipMs": 882,
+          "fullFlowMs": 10146,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 1.301 s",
+            "Item 002 · 1600 × 1200 · 1.325 s",
+            "Item 003 · 1600 × 1200 · 1.309 s",
+            "Item 004 · 1600 × 1200 · 1.312 s",
+            "Item 005 · 1600 × 1200 · 1.319 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 18,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": null
+          },
+          "zipBytes": 26550980
+        },
+        {
+          "count": 10,
+          "mode": "pixelizacao",
+          "corpus": "1600x1200",
+          "totalMs": 14745,
+          "validationMs": 5170,
+          "zipMs": 1731,
+          "fullFlowMs": 21831,
+          "perImage": [
+            "Item 001 · 1600 × 1200 · 1.348 s",
+            "Item 002 · 1600 × 1200 · 1.367 s",
+            "Item 003 · 1600 × 1200 · 1.435 s",
+            "Item 004 · 1600 × 1200 · 1.580 s",
+            "Item 005 · 1600 × 1200 · 1.487 s",
+            "Item 006 · 1600 × 1200 · 1.477 s",
+            "Item 007 · 1600 × 1200 · 1.494 s",
+            "Item 008 · 1600 × 1200 · 1.477 s",
+            "Item 009 · 1600 × 1200 · 1.510 s",
+            "Item 010 · 1600 × 1200 · 1.493 s"
+          ],
+          "ui": {
+            "lag": {
+              "max": 37,
+              "longTasks": 0,
+              "maxLongTask": 0
+            },
+            "heap": null
+          },
+          "zipBytes": 53101960
+        }
+      ],
+      "privacy": {
+        "unexpectedRequests": [],
+        "pageCalls": [],
+        "workerCalls": []
+      },
+      "offline": true,
+      "errors": [],
+      "crashes": 0,
+      "mobileOverflow": false,
+      "urls": {
+        "created": 409,
+        "revoked": 409
+      }
+    }
+  ],
+  "tolerance": {
+    "pngMax": 0,
+    "blurMax": 2,
+    "pixelMax": 2,
+    "mean": 0.5,
+    "jpegDecodeMax": 3,
+    "jpegDecodeMean": 0.5,
+    "jpegPipelineMax": 5,
+    "jpegPipelineMean": 0.7
+  }
+}

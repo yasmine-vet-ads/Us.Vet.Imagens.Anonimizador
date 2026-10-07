@@ -1,0 +1,379 @@
+{
+  "date": "2026-10-07",
+  "classification": "PRONTO PARA REVISÃO",
+  "base": "2e4991fcfaeab2d3dc814263e5a8b28e8278b655",
+  "branch": "codex/anonymizer-client-hardening",
+  "worktree": "C:/Users/USER/.codex/worktrees/anonymizer-client-hardening/Us.Vet.Imagens.Anonimizador",
+  "commit": "HEAD of local hardening branch; recorded by git log after commit",
+  "pythonOriginalTests": {
+    "passed": 42,
+    "modified": false,
+    "runner": "unittest"
+  },
+  "coreGroupsPassed": 10,
+  "capabilityCasesPassed": 54,
+  "browserPixelComparisons": 516,
+  "independentExports": {
+    "functional": 144,
+    "stress": 48,
+    "hardening": 237
+  },
+  "jpegDecision": {
+    "rgb": "SUPPORTED RGB/YCbCr 8-bit Huffman SOF0/1/2",
+    "grayscale": "SUPPORTED 8-bit baseline/progressive",
+    "cmyk": "REJECTED BY MVP",
+    "ycck": "REJECTED BY MVP",
+    "otherPrecisionSOFArithmetic": "REJECTED BY MVP"
+  },
+  "browsers": [
+    {
+      "name": "Chrome",
+      "version": "155.0.8059.40",
+      "bitmaps": {
+        "page": {
+          "created": 6,
+          "closed": 6
+        },
+        "worker": {
+          "created": 62,
+          "closed": 62
+        }
+      },
+      "urls": {
+        "created": 97,
+        "revoked": 97
+      },
+      "repeatedTenImageBatches": 6,
+      "jpegNative": [
+        {
+          "variant": "cmyk.jpg",
+          "decoded": true,
+          "comparison": {
+            "max": 0,
+            "mean": 0,
+            "borderMax": 0
+          }
+        },
+        {
+          "variant": "ycck.jpg",
+          "decoded": true,
+          "comparison": {
+            "max": 1,
+            "mean": 1,
+            "borderMax": 1
+          }
+        }
+      ],
+      "fallback": [
+        {
+          "kind": "absent",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "kind": "context",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "kind": "decoder",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        }
+      ],
+      "pagehide": true,
+      "offline": true,
+      "privacy": {
+        "unexpectedRequests": [],
+        "pageCalls": [],
+        "workerCalls": []
+      }
+    },
+    {
+      "name": "Edge",
+      "version": "154.0.4258.62",
+      "bitmaps": {
+        "page": {
+          "created": 6,
+          "closed": 6
+        },
+        "worker": {
+          "created": 62,
+          "closed": 62
+        }
+      },
+      "urls": {
+        "created": 97,
+        "revoked": 97
+      },
+      "repeatedTenImageBatches": 6,
+      "jpegNative": [
+        {
+          "variant": "cmyk.jpg",
+          "decoded": true,
+          "comparison": {
+            "max": 0,
+            "mean": 0,
+            "borderMax": 0
+          }
+        },
+        {
+          "variant": "ycck.jpg",
+          "decoded": true,
+          "comparison": {
+            "max": 1,
+            "mean": 1,
+            "borderMax": 1
+          }
+        }
+      ],
+      "fallback": [
+        {
+          "kind": "absent",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "kind": "context",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "kind": "decoder",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        }
+      ],
+      "pagehide": true,
+      "offline": true,
+      "privacy": {
+        "unexpectedRequests": [],
+        "pageCalls": [],
+        "workerCalls": []
+      }
+    },
+    {
+      "name": "Firefox",
+      "version": "142.0.1",
+      "bitmaps": {
+        "page": {
+          "created": 6,
+          "closed": 6
+        },
+        "worker": {
+          "created": 62,
+          "closed": 62
+        }
+      },
+      "urls": {
+        "created": 97,
+        "revoked": 97
+      },
+      "repeatedTenImageBatches": 6,
+      "jpegNative": [
+        {
+          "variant": "cmyk.jpg",
+          "decoded": true,
+          "comparison": {
+            "max": 0,
+            "mean": 0,
+            "borderMax": 0
+          }
+        },
+        {
+          "variant": "ycck.jpg",
+          "decoded": true,
+          "comparison": {
+            "max": 1,
+            "mean": 1,
+            "borderMax": 1
+          }
+        }
+      ],
+      "fallback": [
+        {
+          "kind": "absent",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "kind": "context",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        },
+        {
+          "kind": "decoder",
+          "max": 0,
+          "mean": 0,
+          "borderMax": 0
+        }
+      ],
+      "pagehide": true,
+      "offline": true,
+      "privacy": {
+        "unexpectedRequests": [],
+        "pageCalls": [],
+        "workerCalls": []
+      }
+    }
+  ],
+  "memory": {
+    "totalRAMMeasured": false,
+    "scope": "balanced ImageBitmap and object URL counters; reset canvases; no retained batch DOM after clear/pagehide; no universal GC/native-memory guarantee"
+  },
+  "safari": {
+    "desktop": "PENDING REAL DEVICE",
+    "iOS": "PENDING REAL DEVICE"
+  },
+  "privacy": {
+    "audit": {
+      "results": [
+        {
+          "file": "src/binary.ts",
+          "networkOrPersistentAPI": false
+        },
+        {
+          "file": "src/capabilities.ts",
+          "networkOrPersistentAPI": false
+        },
+        {
+          "file": "src/codec.ts",
+          "networkOrPersistentAPI": false
+        },
+        {
+          "file": "src/core.ts",
+          "networkOrPersistentAPI": false
+        },
+        {
+          "file": "src/decode.ts",
+          "networkOrPersistentAPI": false
+        },
+        {
+          "file": "src/effects.ts",
+          "networkOrPersistentAPI": false
+        },
+        {
+          "file": "src/engine.ts",
+          "networkOrPersistentAPI": false
+        },
+        {
+          "file": "src/errors.ts",
+          "networkOrPersistentAPI": false
+        },
+        {
+          "file": "src/jpeg.ts",
+          "networkOrPersistentAPI": false
+        },
+        {
+          "file": "src/main.ts",
+          "networkOrPersistentAPI": false
+        },
+        {
+          "file": "src/png.ts",
+          "networkOrPersistentAPI": false
+        },
+        {
+          "file": "src/state.ts",
+          "networkOrPersistentAPI": false
+        },
+        {
+          "file": "src/validation.ts",
+          "networkOrPersistentAPI": false
+        },
+        {
+          "file": "src/worker.ts",
+          "networkOrPersistentAPI": false
+        },
+        {
+          "file": "src/zip.ts",
+          "networkOrPersistentAPI": false
+        },
+        {
+          "file": "index.html",
+          "networkOrPersistentAPI": false
+        },
+        {
+          "file": "style.css",
+          "networkOrPersistentAPI": false
+        }
+      ],
+      "runtimeDependencies": [],
+      "staticOnly": true,
+      "cspConnectNone": true,
+      "analytics": false,
+      "storage": false
+    },
+    "processingNetworkRequests": 0,
+    "networkCalls": 0,
+    "storage": false,
+    "analytics": false,
+    "telemetry": false
+  },
+  "offline": "full loaded-page and loaded-worker selection/process/review/ZIP/download flows passed",
+  "assets": {
+    "main.js": {
+      "bytes": 11175,
+      "sha256": "1d06c34e5dee25de43180af7c970140441282b6639c6da7e9efc4b5785a92fc0"
+    },
+    "worker.js": {
+      "bytes": 14154,
+      "sha256": "87c6d21eeb52dec3a666e2abdb7f1573bc2febfb95daf7d37ba4bd441409d7f8"
+    },
+    "index.html": {
+      "bytes": 3080,
+      "sha256": "dc3c35a705294500b87d85a8f71050726ff89bf998d83ac10732a640341b6fe8"
+    },
+    "style.css": {
+      "bytes": 3356,
+      "sha256": "6862545ba5beab9073ca59f50c5df9d507d1ef0ee8b87b8748d5e78ce7dd8a11"
+    }
+  },
+  "filesChanged": [
+    "browser-poc/README.md",
+    "browser-poc/package.json",
+    "browser-poc/scripts/build.mjs",
+    "browser-poc/scripts/evidence-hardening.mjs",
+    "browser-poc/src/README.md",
+    "browser-poc/src/binary.ts",
+    "browser-poc/src/capabilities.ts",
+    "browser-poc/src/codec.ts",
+    "browser-poc/src/core.ts",
+    "browser-poc/src/decode.ts",
+    "browser-poc/src/effects.ts",
+    "browser-poc/src/engine.ts",
+    "browser-poc/src/errors.ts",
+    "browser-poc/src/jpeg.ts",
+    "browser-poc/src/main.ts",
+    "browser-poc/src/png.ts",
+    "browser-poc/src/validation.ts",
+    "browser-poc/src/worker.ts",
+    "browser-poc/src/zip.ts",
+    "browser-poc/tests/README.md",
+    "browser-poc/tests/browser.mjs",
+    "browser-poc/tests/capabilities-browser.mjs",
+    "browser-poc/tests/fixtures_hardening.py",
+    "browser-poc/tests/hardening.test.mjs",
+    "browser-poc/tests/verify_hardening_exports.py",
+    "docs/anonymizer-client-hardening-evidence/audit.json",
+    "docs/anonymizer-client-hardening-evidence/browser-report.json",
+    "docs/anonymizer-client-hardening-evidence/capabilities-report.json",
+    "docs/anonymizer-client-hardening-evidence/core-metrics.json",
+    "docs/anonymizer-client-hardening-evidence/extra-report.json",
+    "docs/anonymizer-client-hardening-evidence/functional-export-verification.json",
+    "docs/anonymizer-client-hardening-evidence/hardening-export-verification.json",
+    "docs/anonymizer-client-hardening-evidence/hardening-report.json",
+    "docs/anonymizer-client-hardening-evidence/python-browser-comparison.png",
+    "docs/anonymizer-client-hardening-evidence/stress-export-verification.json",
+    "docs/anonymizer-client-hardening-evidence/stress-report.json",
+    "docs/anonymizer-client-hardening-evidence/summary.json",
+    "docs/anonymizer-client-hardening.md"
+  ]
+}

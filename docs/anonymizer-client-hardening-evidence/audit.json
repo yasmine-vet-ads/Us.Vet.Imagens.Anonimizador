@@ -1,0 +1,77 @@
+{
+  "results": [
+    {
+      "file": "src/binary.ts",
+      "networkOrPersistentAPI": false
+    },
+    {
+      "file": "src/capabilities.ts",
+      "networkOrPersistentAPI": false
+    },
+    {
+      "file": "src/codec.ts",
+      "networkOrPersistentAPI": false
+    },
+    {
+      "file": "src/core.ts",
+      "networkOrPersistentAPI": false
+    },
+    {
+      "file": "src/decode.ts",
+      "networkOrPersistentAPI": false
+    },
+    {
+      "file": "src/effects.ts",
+      "networkOrPersistentAPI": false
+    },
+    {
+      "file": "src/engine.ts",
+      "networkOrPersistentAPI": false
+    },
+    {
+      "file": "src/errors.ts",
+      "networkOrPersistentAPI": false
+    },
+    {
+      "file": "src/jpeg.ts",
+      "networkOrPersistentAPI": false
+    },
+    {
+      "file": "src/main.ts",
+      "networkOrPersistentAPI": false
+    },
+    {
+      "file": "src/png.ts",
+      "networkOrPersistentAPI": false
+    },
+    {
+      "file": "src/state.ts",
+      "networkOrPersistentAPI": false
+    },
+    {
+      "file": "src/validation.ts",
+      "networkOrPersistentAPI": false
+    },
+    {
+      "file": "src/worker.ts",
+      "networkOrPersistentAPI": false
+    },
+    {
+      "file": "src/zip.ts",
+      "networkOrPersistentAPI": false
+    },
+    {
+      "file": "index.html",
+      "networkOrPersistentAPI": false
+    },
+    {
+      "file": "style.css",
+      "networkOrPersistentAPI": false
+    }
+  ],
+  "runtimeDependencies": [],
+  "staticOnly": true,
+  "cspConnectNone": true,
+  "analytics": false,
+  "storage": false
+}

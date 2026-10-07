@@ -1,0 +1,54 @@
+import {roundEven} from './core';
+export function reflect101(x:number,n:number):number {
+  if(n===1) return 0;
+  const period=2*n-2; x=((x%period)+period)%period;
+  return x<n?x:period-x;
+}
+export function gaussianKernel(size:number) {
+  const sigma=.3*((size-1)*.5-1)+.8;
+  const k=Float64Array.from({length:size},(_,i)=>Math.exp(-.5*((i-(size-1)/2)/sigma)**2));
+  const sum=k.reduce((a,b)=>a+b,0); return k.map(v=>v/sum);
+}
+export function gaussianKernel8(size:number) {
+  const floating=gaussianKernel(size),fixed=new Uint16Array(size),half=(size-1)/2;
+  let error=0,sum=0;
+  // Error-diffused symmetric 8-bit coefficients; center closes sum to 256.
+  for(let i=0;i<half;i++){
+    const adjusted=floating[i]*256+error,weight=roundEven(adjusted);
+    error=adjusted-weight;fixed[i]=weight;fixed[size-1-i]=weight;sum+=weight;
+  }
+  fixed[half]=256-2*sum;return fixed;
+}
+export function blur(src:Uint8Array,w:number,h:number) {
+  const size=Math.max(21,Math.floor(Math.min(w,h)/8)*2+1), half=(size-1)/2, k=gaussianKernel8(size);
+  const temp=new Uint16Array(src.length), dst=new Uint8Array(src.length);
+  // BORDER_REFLECT_101, isolated ROI, like the copied Python region.
+  for(let y=0;y<h;y++) for(let x=0;x<w;x++) for(let c=0;c<3;c++){
+    let sum=0; for(let j=0;j<size;j++) sum+=src[(y*w+reflect101(x+j-half,w))*3+c]*k[j];
+    temp[(y*w+x)*3+c]=sum;
+  }
+  for(let y=0;y<h;y++) for(let x=0;x<w;x++) for(let c=0;c<3;c++){
+    let sum=0; for(let j=0;j<size;j++) sum+=temp[(reflect101(y+j-half,h)*w+x)*3+c]*k[j];
+    dst[(y*w+x)*3+c]=Math.min(255,Math.floor((sum+32768)/65536));
+  }
+  return dst;
+}
+export function pixelate(src:Uint8Array,w:number,h:number) {
+  const sw=Math.max(1,Math.floor(w/12)),sh=Math.max(1,Math.floor(h/12)),small=new Uint8Array(sw*sh*3);
+  // OpenCV INTER_LINEAR uses half-pixel coordinates, not browser smoothing.
+  for(let y=0;y<sh;y++) for(let x=0;x<sw;x++){
+    const fx=(x+.5)*w/sw-.5,fy=(y+.5)*h/sh-.5;
+    const x0=Math.max(0,Math.floor(fx)),y0=Math.max(0,Math.floor(fy));
+    const x1=Math.min(w-1,x0+1),y1=Math.min(h-1,y0+1);
+    const ax=Math.max(0,fx-x0),ay=Math.max(0,fy-y0);
+    for(let c=0;c<3;c++) small[(y*sw+x)*3+c]=roundEven(
+      (src[(y0*w+x0)*3+c]*(1-ax)+src[(y0*w+x1)*3+c]*ax)*(1-ay)+
+      (src[(y1*w+x0)*3+c]*(1-ax)+src[(y1*w+x1)*3+c]*ax)*ay);
+  }
+  const dst=new Uint8Array(src.length);
+  for(let y=0;y<h;y++) for(let x=0;x<w;x++) {
+    const a=(Math.min(sh-1,Math.floor(y*sh/h))*sw+Math.min(sw-1,Math.floor(x*sw/w)))*3;
+    dst.set(small.subarray(a,a+3),(y*w+x)*3);
+  }
+  return dst;
+}
